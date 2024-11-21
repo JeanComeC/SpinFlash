@@ -40,24 +40,6 @@ nav a {
   font-style: italic;
 }
 
-nav ul {
-  font-size: 20px;
-  display: flex;
-  list-style: none;
-  gap: 35px;
-}
-
-.commander {
-  background-color: #ffffff;
-  border-radius: 8px;
-  color: #357294;
-  padding: 0 5px;
-}
-
-.prod {
-  cursor: default;
-}
-
 .produits {
   display: none;
   flex-wrap: wrap;
@@ -136,5 +118,25 @@ nav ul {
 
   .card img {
     width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  nav ul {
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    gap: 35px;
+  }
+
+  .commander {
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: #357294;
+    padding: 0 5px;
+  }
+
+  .prod {
+    cursor: default;
   }
 }
