@@ -49,16 +49,25 @@ nav ul {
 
 .produits {
   display: none;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 100vh;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .produit {
-  max-width: 27%;
-  aspect-ratio: 1/1;
+  min-width: 192px;
+  max-width: 250px;
+  flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.produit img {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 /* CORPS */
