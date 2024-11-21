@@ -65,6 +65,17 @@ nav ul {
   justify-content: center;
   align-items: center;
 }
+
+.produit a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.produit h3 {
+  margin: 0;
+  text-align: center;
+}
+
 .produit img {
   width: 100%;
   aspect-ratio: 1/1;
