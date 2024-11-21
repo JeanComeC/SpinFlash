@@ -21,7 +21,9 @@ nav {
   background-blend-mode: darken;
 }
 
-.navContent {
+/* ordi */
+
+.ordi {
   width: 100vw - 40px;
   backdrop-filter: blur(2px);
   display: flex;
@@ -30,9 +32,65 @@ nav {
   padding: 0px 20px;
 }
 
-nav a {
+nav .ordi a {
   color: #ffffff;
   text-decoration: none;
+}
+
+nav .ordi ul {
+  font-size: 20px;
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+nav .ordi .commander {
+  color: #357294;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0 5px;
+}
+
+/* telephone */
+
+.telephone {
+  width: 100vw - 40px;
+  height: 64px;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+nav .telephone a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav .telephone ul {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 35px;
+}
+
+.hidden {
+  display: none;
+}
+
+nav .telephone .commander {
+  color: #357294;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0 5px;
+}
+
+/* reste de la navbar */
+
+.prod {
+  cursor: default;
 }
 
 .titre {
@@ -121,22 +179,20 @@ nav a {
   }
 }
 
-@media (min-width: 800px) {
-  nav ul {
-    font-size: 20px;
+@media (max-width: 800px) {
+  .ordi {
+    display: none;
+  }
+  .telephone {
     display: flex;
-    list-style: none;
-    gap: 35px;
   }
+}
 
-  .commander {
-    background-color: #ffffff;
-    border-radius: 8px;
-    color: #357294;
-    padding: 0 5px;
+@media (min-width: 801px) {
+  .telephone {
+    display: none;
   }
-
-  .prod {
-    cursor: default;
+  .ordi {
+    display: flex;
   }
 }
