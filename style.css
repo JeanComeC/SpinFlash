@@ -47,6 +47,10 @@ nav ul {
   gap: 35px;
 }
 
+.produits {
+  display: none;
+}
+
 /* CORPS */
 .corps {
   margin: 0 10%;
@@ -64,7 +68,7 @@ nav ul {
   border-radius: 10px;
   aspect-ratio: 3/2;
   object-fit: cover;
-  object-position: center bottom;
+  object-position:  bottom;
 }
 
 .content {
