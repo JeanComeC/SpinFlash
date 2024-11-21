@@ -51,6 +51,10 @@ nav ul {
   display: none;
 }
 
+#produits:hover > .produits {
+  display: block;
+}
+
 /* CORPS */
 .corps {
   margin: 0 10%;
