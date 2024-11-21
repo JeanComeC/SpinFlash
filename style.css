@@ -49,10 +49,16 @@ nav ul {
 
 .produits {
   display: none;
+  justify-content: space-evenly;
+  width: 100vh;
 }
 
-#produits:hover > .produits {
-  display: block;
+.produit {
+  max-width: 27%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* CORPS */
@@ -72,7 +78,7 @@ nav ul {
   border-radius: 10px;
   aspect-ratio: 3/2;
   object-fit: cover;
-  object-position:  bottom;
+  object-position: bottom;
 }
 
 .content {
