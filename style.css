@@ -60,23 +60,36 @@ nav ul {
 
 .card img {
   width: 400px;
+  height: max;
   border-radius: 10px;
   aspect-ratio: 3/2;
+  object-fit: cover;
+  object-position: center bottom;
 }
 
-.card .content {
+.content {
   display: flex;
   flex-direction: column;
   text-align: justify;
   margin: 0 20px;
 }
 
-.card .content * {
+.content * {
   margin: 5px 0;
   font-size: 20px;
 }
 
-.card .content h3 {
+.content h3 {
   text-align: center;
   font-size: 25px;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card img {
+    width: 100%;
+  }
 }
