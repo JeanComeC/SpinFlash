@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const targetDiv = document.querySelector(".produits");
 
   menuButton.addEventListener("click", () => {
-    if (liensTel.style.height === "0" || liensTel.style.display === "") {
-      liensTel.style.height = liensTel.scrollHeight + "px";
-      liensTel.classList.add("expanded");
+    if (liensTel.classList.contains("menu-actif")) {
+      liensTel.classList.remove("menu-actif");
+      liensTel.classList.add("menu-inactif");
     } else {
-      liensTel.style.height = "0";
-      liensTel.classList.remove("expanded");
+     liensTel.classList.remove("menu-inactif");
+     liensTel.classList.add("menu-actif");
     }
   });
 });
