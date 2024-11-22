@@ -58,16 +58,6 @@ nav .commander {
   overflow: hidden;
 }
 
-.menu-inactif {
-  height: 0;
-  transition: height 0.5s ease-in-out;
-}
-
-.menu-actif {
-  height: 100px;
-  transition: height 0.5s ease-in-out;
-}
-
 .liensTel a {
   color: #000000;
   text-decoration: none;
@@ -83,6 +73,25 @@ nav .commander {
   left: -5px;
 }
 
+/* gestion des animations menu */
+
+.menu-inactif {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+.menu-actif {
+  height: 110px;
+  transition: height 0.5s ease-in-out;
+}
+
+.produits-actif {
+  height: 100px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
 /* reste de la navbar */
 
 .prod {
@@ -95,12 +104,14 @@ nav .commander {
 }
 
 .produits {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin: 0;
+  list-style: inside;
+  transition: height 0.5s ease-in-out;
 }
 
 .produit {
@@ -196,5 +207,8 @@ nav .commander {
   }
   .ordi {
     display: flex;
+  }
+  .liensTel {
+    display: none;
   }
 }
