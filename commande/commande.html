@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPINFLASH - Commander</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navContent">
+        <div class="titre">
+          <a href="../index.html">SPINFLASH</a>
+        </div>
+        <div class="liens">
+          <ul>
+            <li class="prod ordi" id="btn-produits-ordi">
+              Produits
+              <span class="material-symbols-outlined" id="arrow-ordi">
+                arrow_drop_down
+              </span>
+            </li>
+            <li class="ordi"><a href="apropos.html">À Propos</a></li>
+            <li class="ordi"><a href="../contact/contact.html">Contact</a></li>
+            <li class="ordi">
+              <a href="../commande/commande.html" class="commander"
+                >Commander</a
+              >
+            </li>
+            <li class="tel">
+              <span
+                class="material-symbols-outlined menu"
+                style="cursor: default"
+                id="toggleButton"
+              >
+                menu
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <ul class="liensTel menu-inactif">
+      <li>
+        <p
+          class="prod"
+          style="
+            margin: 0;
+            cursor: pointer;
+            display: flex;
+            gap: 3px;
+            justify-content: left;
+            align-content: center;
+          "
+          id="btn-produits-tel"
+        >
+          Produits
+          <span class="material-symbols-outlined" id="arrow-tel">
+            arrow_drop_down
+          </span>
+        </p>
+        <ul class="produits menu-inactif" id="liste-produits-tel">
+          <li class="produit1 produit">
+            <a href="../produits/produit1.html">
+              <img src="../img/handspinner1.png" alt="USB Spinner 1" />
+              <h3 style="margin: 0">Produit 1</h3>
+            </a>
+          </li>
+          <li class="produit2 produit">
+            <a href="../produits/produit2.html">
+              <img src="../img/handspinner1.png" alt="USB Spinner 2" />
+              <h3>Produit 2</h3>
+            </a>
+          </li>
+          <li class="produit3 produit">
+            <a href="../produits/produit3.html">
+              <img src="../img/handspinner1.png" alt="USB Spinner 3" />
+              <h3 style="margin: 0">Produit 3</h3>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="../apropos/apropos.html">À Propos</a></li>
+      <li><a href="../contact/contact.html">Contact</a></li>
+      <li>
+        <a href="../commande/commande.html" class="commanderTel">Commander</a>
+      </li>
+    </ul>
+    <ul class="produits menu-inactif" id="liste-produits-ordi">
+      <li class="produit1 produit">
+        <a href="../produits/produit1.html">
+          <img src="../img/handspinner1.png" alt="USB Spinner 1" />
+          <h3 style="margin: 0">Produit 1</h3>
+        </a>
+      </li>
+      <li class="produit2 produit">
+        <a href="../produits/produit2.html">
+          <img src="../img/handspinner1.png" alt="USB Spinner 2" />
+          <h3>Produit 2</h3>
+        </a>
+      </li>
+      <li class="produit3 produit">
+        <a href="../produits/produit3.html">
+          <img src="../img/handspinner1.png" alt="USB Spinner 3" />
+          <h3 style="margin: 0">Produit 3</h3>
+        </a>
+      </li>
+    </ul>
+    <script src="../script.js"></script>
+  </body>
+</html>
