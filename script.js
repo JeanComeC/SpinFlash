@@ -21,46 +21,58 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuButton = document.querySelector("#toggleButton");
   const liensTel = document.querySelector(".liensTel");
-  const ProduitButtons = document.querySelectorAll(".prod");
-  const ListeProduits = document.querySelector(".produits");
+  const BtnProduitsTel = document.querySelector("#btn-produits-tel");
+  const BtnProduitsOrdi = document.querySelector("#btn-produits-ordi");
+  const ListeProduitsTel = document.querySelector("#liste-produits-tel");
+  const ListeProduitsOrdi = document.querySelector("#liste-produits-ordi");
   const ProduitActif = document.querySelector(".produits-actif");
   // bouton + animation menu version telephone
 
   menuButton.addEventListener("click", () => {
     if (liensTel.classList.contains("menu-actif")) {
+      liensTel.style.height = "0";
       liensTel.classList.remove("menu-actif");
       liensTel.classList.add("menu-inactif");
-      liensTel.style.height = "0";
-      ListeProduits.style.height = "0";
-      ListeProduits.classList.add("menu-inactif");
+      if (ListeProduitsTel.style.height != "0") {
+        ListeProduitsTel.style.height = "0";
+        ListeProduitsTel.classList.remove("produits-actif");
+        ListeProduitsTel.classList.add("menu-inactif");
+      }
     } else {
-      liensTel.classList.remove("menu-inactif");
       liensTel.style.height = liensTel.scrollHeight + "px";
+      liensTel.classList.remove("menu-inactif");
       liensTel.classList.add("menu-actif");
     }
   });
 
-  // bouton + animation produits toutes versions
+  // bouton + animation Tel
 
-  ProduitButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      if (ListeProduits.classList.contains("produits-actif")) {
-        ListeProduits.classList.remove("produits-actif");
-        if (window.innerWidth < 805) {
-          let menuHeight = liensTel.scrollHeight - ListeProduits.scrollHeight;
-          liensTel.style.height = menuHeight + "px";
-        }
-        ListeProduits.style.height = "0";
-        ListeProduits.classList.add("menu-inactif");
-      } else {
-        ListeProduits.style.height = ListeProduits.scrollHeight + "px";
-        if (window.innerWidth < 805) {
-          liensTel.style.height =
-            ListeProduits.scrollHeight + liensTel.scrollHeight + "px";
-        }
-        ListeProduits.classList.remove("menu-inactif");
-        ListeProduits.classList.add("produits-actif");
-      }
-    });
+  BtnProduitsTel.addEventListener("click", () => {
+    if (ListeProduitsTel.classList.contains("produits-actif")) {
+        ListeProduitsTel.style.height = "0";
+        liensTel.style.height =
+          liensTel.scrollHeight - ListeProduitsTel.scrollHeight + "px";
+        ListeProduitsTel.classList.remove("produits-actif");
+        ListeProduitsTel.classList.add("menu-inactif");
+    } else {
+        ListeProduitsTel.style.height = ListeProduitsTel.scrollHeight + "px";
+        liensTel.style.height = liensTel.scrollHeight + ListeProduitsTel.scrollHeight + "px";
+        ListeProduitsTel.classList.remove("menu-inactif");
+        ListeProduitsTel.classList.add("produits-actif");
+    }
+  });
+
+  // bouton + animation Ordi
+
+  BtnProduitsOrdi.addEventListener("click", () => {
+    if (ListeProduitsOrdi.classList.contains("produits-actif")) {
+        ListeProduitsOrdi.style.height = "0";
+        ListeProduitsOrdi.classList.remove("produits-actif");
+        ListeProduitsOrdi.classList.add("menu-inactif");
+    } else {
+        ListeProduitsOrdi.style.height = ListeProduitsOrdi.scrollHeight + "px";
+        ListeProduitsOrdi.classList.remove("menu-inactif");
+        ListeProduitsOrdi.classList.add("produits-actif");
+    }
   });
 });
