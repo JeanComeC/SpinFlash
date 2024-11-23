@@ -1,0 +1,29 @@
+.corps {
+    margin: 0 10%;
+    display: flex;
+}
+
+.fiche-produit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fiche-produit img {
+    max-width: 346px;
+    aspect-ratio: 1/1;
+    height: auto;
+}
+
+.fiche-produit .couleurs {
+    display: flex;
+    gap: 10px;
+}
+
+.fiche-produit .couleurs div {
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    border: solid 1px #000000;
+}
