@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const BtnProduitsOrdi = document.querySelector("#btn-produits-ordi");
   const ListeProduitsTel = document.querySelector("#liste-produits-tel");
   const ListeProduitsOrdi = document.querySelector("#liste-produits-ordi");
-  const ProduitActif = document.querySelector(".produits-actif");
+  const arrowTel = document.querySelector("#arrow-tel");
+  const arrowOrdi = document.querySelector("#arrow-ordi");
+
   // bouton + animation menu version telephone
 
   menuButton.addEventListener("click", () => {
@@ -54,11 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
           liensTel.scrollHeight - ListeProduitsTel.scrollHeight + "px";
         ListeProduitsTel.classList.remove("produits-actif");
         ListeProduitsTel.classList.add("menu-inactif");
+        arrowTel.style.transform = "rotate(0deg)";
     } else {
         ListeProduitsTel.style.height = ListeProduitsTel.scrollHeight + "px";
         liensTel.style.height = liensTel.scrollHeight + ListeProduitsTel.scrollHeight + "px";
         ListeProduitsTel.classList.remove("menu-inactif");
         ListeProduitsTel.classList.add("produits-actif");
+        arrowTel.style.transform = "rotate(180deg)";
     }
   });
 
@@ -69,10 +73,12 @@ document.addEventListener("DOMContentLoaded", () => {
         ListeProduitsOrdi.style.height = "0";
         ListeProduitsOrdi.classList.remove("produits-actif");
         ListeProduitsOrdi.classList.add("menu-inactif");
+        arrowOrdi.style.transform = "rotate(0deg)";
     } else {
         ListeProduitsOrdi.style.height = ListeProduitsOrdi.scrollHeight + "px";
         ListeProduitsOrdi.classList.remove("menu-inactif");
         ListeProduitsOrdi.classList.add("produits-actif");
+        arrowOrdi.style.transform = "rotate(180deg)";
     }
   });
 });
