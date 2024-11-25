@@ -117,7 +117,62 @@
         </li>
       </ul>
     </nav>
-    <form method="post" action="../index.html"></form>
+    <form method="post" action="../index.html">
+      <fieldset>
+        <legend><h1>Contactez-nous :</h1></legend>
+        <i
+          >Merci de bien vouloir remplir entièrement le formulaire et le valider
+          :</i
+        >
+        <hr />
+        <br />
+        <fieldset>
+          <legend>Identité :</legend>
+          <p>
+            Nom :<input type="text" name="fname" /> Prénom :<input
+              type="text"
+              name="iname"
+            />
+          </p>
+          <p>
+            Genre : <input type="radio" name="rb_systeme" />Homme
+            <input type="radio" name="rb_systeme" />Femme Âge :
+            <input type="number" name="âge" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Adresse mail</legend>
+          <p>Votre adresse mail : <input type="email" name="email" /></p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Objet :</legend>
+          <p>
+            Quel est l'objet de votre mail ?
+            <select name="objet" id="objet">
+              <option value="1" selected>Service après vente</option>
+              <option value="2">Demande de stage</option>
+              <option value="3">Demande d'emploi</option>
+              <option value="4">Renseignements</option>
+              <option value="5">Remerciements</option>
+              <option value="6">Autre</option>
+            </select>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Contenu :</legend>
+          <textarea name="contenu" cols="100" rows="8"></textarea
+          ><!--il faut trouver une classe qui flex-->
+          <p>
+            Voulez-vous nous transmettre des pièces jointes ?
+            <input type="file" name="piecejointe" />
+          </p>
+        </fieldset>
+        <br />
+        <input type="reset" name="btn" value="Tout Effacer" />
+        <input type="submit" name="btn" value="Envoyer" />
+      </fieldset>
+    </form>
 
     <script src="../script.js"></script>
   </body>
