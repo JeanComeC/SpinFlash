@@ -12,105 +12,199 @@
     />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navContent">
-        <div class="titre">
-          <a href="index.html">SPINFLASH</a>
-        </div>
-        <div class="liens">
-          <ul>
-            <li class="prod ordi" id="btn-produits-ordi">
-              Produits
-              <span class="material-symbols-outlined" id="arrow-ordi">
-                arrow_drop_down
-              </span>
-            </li>
-            <li class="ordi"><a href="apropos/apropos.html">À Propos</a></li>
-            <li class="ordi"><a href="contact/contact.html">Contact</a></li>
-            <li class="ordi">
-              <a href="commande/commande.html" class="commander">Commander</a>
-            </li>
-            <li class="tel">
-              <span
-                class="material-symbols-outlined menu"
-                style="cursor: default"
-                id="toggleButton"
-              >
-                menu
-              </span>
-            </li>
-          </ul>
+    <nav>
+      <div class="navbar">
+        <div class="navContent">
+          <div class="titre">
+            <a href="index.html">SPINFLASH</a>
+          </div>
+          <div class="liens">
+            <ul>
+              <li class="prod ordi" id="btn-produits-ordi">
+                Produits
+                <span class="material-symbols-outlined" id="arrow-ordi">
+                  arrow_drop_down
+                </span>
+              </li>
+              <li class="ordi"><a href="apropos/apropos.html">À Propos</a></li>
+              <li class="ordi"><a href="contact/contact.html">Contact</a></li>
+              <li class="ordi">
+                <a href="commande/commande.html" class="commander">Commander</a>
+              </li>
+              <li class="tel">
+                <span
+                  class="material-symbols-outlined menu"
+                  style="cursor: default"
+                  id="toggleButton"
+                >
+                  menu
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      <ul class="liensTel menu-inactif">
+        <li>
+          <p
+            class="prod"
+            style="
+              margin: 0;
+              cursor: pointer;
+              display: flex;
+              gap: 3px;
+              justify-content: left;
+              align-content: center;
+            "
+            id="btn-produits-tel"
+          >
+            Produits
+            <span class="material-symbols-outlined" id="arrow-tel">
+              arrow_drop_down
+            </span>
+          </p>
+          <ul class="produits menu-inactif" id="liste-produits-tel">
+            <li class="produit1 produit">
+              <a href="produits/produit1.html">
+                <img src="img/handspinner1.png" alt="USB Spinner 1" />
+                <h3 style="margin: 0">Produit 1</h3>
+              </a>
+            </li>
+            <li class="produit2 produit">
+              <a href="produits/produit2.html">
+                <img src="img/handspinner1.png" alt="USB Spinner 2" />
+                <h3>Produit 2</h3>
+              </a>
+            </li>
+            <li class="produit3 produit">
+              <a href="produits/produit3.html">
+                <img src="img/handspinner1.png" alt="USB Spinner 3" />
+                <h3 style="margin: 0">Produit 3</h3>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="apropos/apropos.html">À Propos</a></li>
+        <li><a href="contact/contact.html">Contact</a></li>
+        <li>
+          <a href="commande/commande.html" class="commanderTel">Commander</a>
+        </li>
+      </ul>
+      <ul class="produits menu-inactif" id="liste-produits-ordi">
+        <li class="produit1 produit">
+          <a href="produits/produit1.html">
+            <img src="img/handspinner1.png" alt="USB Spinner 1" />
+            <h3 style="margin: 0">Produit 1</h3>
+          </a>
+        </li>
+        <li class="produit2 produit">
+          <a href="produits/produit2.html">
+            <img src="img/handspinner1.png" alt="USB Spinner 2" />
+            <h3>Produit 2</h3>
+          </a>
+        </li>
+        <li class="produit3 produit">
+          <a href="produits/produit3.html">
+            <img src="img/handspinner1.png" alt="USB Spinner 3" />
+            <h3 style="margin: 0">Produit 3</h3>
+          </a>
+        </li>
+      </ul>
     </nav>
-    <ul class="liensTel menu-inactif">
-      <li>
-        <p
-          class="prod"
-          style="
-            margin: 0;
-            cursor: pointer;
-            display: flex;
-            gap: 3px;
-            justify-content: left;
-            align-content: center;
-          "
-          id="btn-produits-tel"
-        >
-          Produits
-          <span class="material-symbols-outlined" id="arrow-tel">
-            arrow_drop_down
-          </span>
-        </p>
-        <ul class="produits menu-inactif" id="liste-produits-tel">
-          <li class="produit1 produit">
-            <a href="produits/produit1.html">
-              <img src="img/handspinner1.png" alt="USB Spinner 1" />
-              <h3 style="margin: 0">Produit 1</h3>
-            </a>
-          </li>
-          <li class="produit2 produit">
-            <a href="produits/produit2.html">
-              <img src="img/handspinner1.png" alt="USB Spinner 2" />
-              <h3>Produit 2</h3>
-            </a>
-          </li>
-          <li class="produit3 produit">
-            <a href="produits/produit3.html">
-              <img src="img/handspinner1.png" alt="USB Spinner 3" />
-              <h3 style="margin: 0">Produit 3</h3>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li><a href="apropos/apropos.html">À Propos</a></li>
-      <li><a href="contact/contact.html">Contact</a></li>
-      <li>
-        <a href="commande/commande.html" class="commanderTel">Commander</a>
-      </li>
-    </ul>
-    <ul class="produits menu-inactif" id="liste-produits-ordi">
-      <li class="produit1 produit">
-        <a href="produits/produit1.html">
-          <img src="img/handspinner1.png" alt="USB Spinner 1" />
-          <h3 style="margin: 0">Produit 1</h3>
-        </a>
-      </li>
-      <li class="produit2 produit">
-        <a href="produits/produit2.html">
-          <img src="img/handspinner1.png" alt="USB Spinner 2" />
-          <h3>Produit 2</h3>
-        </a>
-      </li>
-      <li class="produit3 produit">
-        <a href="produits/produit3.html">
-          <img src="img/handspinner1.png" alt="USB Spinner 3" />
-          <h3 style="margin: 0">Produit 3</h3>
-        </a>
-      </li>
-    </ul>
     <!-- CORPS DU SITE -->
     <div class="corps">
+      <div class="card">
+        <img
+          src="img/factory-workshop-interior-machines-glass-production-background-compressed.jpg"
+          alt="Notre Usine De Saint Herblain"
+          loading="lazy"
+        />
+        <div class="content">
+          <h3>Production Locale</h3>
+          <p>
+            Notre startup, basée à Saint-Herblain, se distingue par un
+            engagement inébranlable envers la qualité et la personnalisation de
+            nos produits. Nous croyons fermement que chaque client mérite une
+            expérience unique et adaptée à ses besoins spécifiques. C'est
+            pourquoi nous investissons dans des matériaux de première qualité et
+            des processus de fabrication rigoureux pour garantir des produits
+            qui surpassent les attentes. De plus, notre approche personnalisée
+            nous permet de créer des solutions sur mesure, répondant
+            parfaitement aux exigences et aux désirs de nos clients. En plaçant
+            la satisfaction du client au cœur de notre mission, nous nous
+            efforçons de bâtir des relations durables et de confiance.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="img/factory-workshop-interior-machines-glass-production-background-compressed.jpg"
+          alt="Notre Usine De Saint Herblain"
+          loading="lazy"
+        />
+        <div class="content">
+          <h3>Production Locale</h3>
+          <p>
+            Notre startup, basée à Saint-Herblain, se distingue par un
+            engagement inébranlable envers la qualité et la personnalisation de
+            nos produits. Nous croyons fermement que chaque client mérite une
+            expérience unique et adaptée à ses besoins spécifiques. C'est
+            pourquoi nous investissons dans des matériaux de première qualité et
+            des processus de fabrication rigoureux pour garantir des produits
+            qui surpassent les attentes. De plus, notre approche personnalisée
+            nous permet de créer des solutions sur mesure, répondant
+            parfaitement aux exigences et aux désirs de nos clients. En plaçant
+            la satisfaction du client au cœur de notre mission, nous nous
+            efforçons de bâtir des relations durables et de confiance.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="img/factory-workshop-interior-machines-glass-production-background-compressed.jpg"
+          alt="Notre Usine De Saint Herblain"
+          loading="lazy"
+        />
+        <div class="content">
+          <h3>Production Locale</h3>
+          <p>
+            Notre startup, basée à Saint-Herblain, se distingue par un
+            engagement inébranlable envers la qualité et la personnalisation de
+            nos produits. Nous croyons fermement que chaque client mérite une
+            expérience unique et adaptée à ses besoins spécifiques. C'est
+            pourquoi nous investissons dans des matériaux de première qualité et
+            des processus de fabrication rigoureux pour garantir des produits
+            qui surpassent les attentes. De plus, notre approche personnalisée
+            nous permet de créer des solutions sur mesure, répondant
+            parfaitement aux exigences et aux désirs de nos clients. En plaçant
+            la satisfaction du client au cœur de notre mission, nous nous
+            efforçons de bâtir des relations durables et de confiance.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="img/factory-workshop-interior-machines-glass-production-background-compressed.jpg"
+          alt="Notre Usine De Saint Herblain"
+          loading="lazy"
+        />
+        <div class="content">
+          <h3>Production Locale</h3>
+          <p>
+            Notre startup, basée à Saint-Herblain, se distingue par un
+            engagement inébranlable envers la qualité et la personnalisation de
+            nos produits. Nous croyons fermement que chaque client mérite une
+            expérience unique et adaptée à ses besoins spécifiques. C'est
+            pourquoi nous investissons dans des matériaux de première qualité et
+            des processus de fabrication rigoureux pour garantir des produits
+            qui surpassent les attentes. De plus, notre approche personnalisée
+            nous permet de créer des solutions sur mesure, répondant
+            parfaitement aux exigences et aux désirs de nos clients. En plaçant
+            la satisfaction du client au cœur de notre mission, nous nous
+            efforçons de bâtir des relations durables et de confiance.
+          </p>
+        </div>
+      </div>
       <div class="card">
         <img
           src="img/factory-workshop-interior-machines-glass-production-background-compressed.jpg"
