@@ -20,12 +20,20 @@
           <ul>
             <li class="prod ordi" id="btn-produits-ordi">
               Produits
-              <span class="material-symbols-outlined" id="arrow-ordi"> arrow_drop_down </span>
+              <span class="material-symbols-outlined" id="arrow-ordi">
+                arrow_drop_down
+              </span>
             </li>
-            <li class="ordi"><a href="../apropos/apropos.html">À Propos</a></li>
-            <li class="ordi"><a href="../contact/contact.html">Contact</a></li>
             <li class="ordi">
-              <a href="../commande/commande.html" class="commander">Commander</a>
+              <a href="../apropos/apropos.html">À Propos</a>
+            </li>
+            <li class="ordi">
+              <a href="../contact/contact.html">Contact</a>
+            </li>
+            <li class="ordi">
+              <a href="../commande/commande.html" class="commander"
+                >Commander</a
+              >
             </li>
             <li class="tel">
               <span
@@ -55,7 +63,9 @@
           id="btn-produits-tel"
         >
           Produits
-          <span class="material-symbols-outlined" id="arrow-tel"> arrow_drop_down </span>
+          <span class="material-symbols-outlined" id="arrow-tel">
+            arrow_drop_down
+          </span>
         </p>
         <ul class="produits menu-inactif" id="liste-produits-tel">
           <li class="produit1 produit">
@@ -80,7 +90,9 @@
       </li>
       <li><a href="../apropos/apropos.html">À Propos</a></li>
       <li><a href="../contact/contact.html">Contact</a></li>
-      <li><a href="../commande/commande.html" class="commanderTel">Commander</a></li>
+      <li>
+        <a href="../commande/commande.html" class="commanderTel">Commander</a>
+      </li>
     </ul>
     <ul class="produits menu-inactif" id="liste-produits-ordi">
       <li class="produit1 produit">
@@ -102,6 +114,25 @@
         </a>
       </li>
     </ul>
+
+    <form method="post" action="">
+      <h1>Contactez-nous :</h1>
+      <hr />
+      <i>Merci de bien vouloir remplir et valider le formulaire suivant :</i
+      ><br />
+      <br />
+      <fieldset>
+        <legend>Identité</legend>
+        <p>
+          Nom :<input type="text" name="fname" /> Prénom :
+          <input type="text" name="iname" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Adresse mail</legend>
+        <p>Votre adresse mail :<input type="" name="" /></p>
+      </fieldset>
+    </form>
     <script src="../script.js"></script>
   </body>
 </html>
