@@ -11,7 +11,7 @@ body {
   font-family: "Arial";
 }
 
-nav {
+.navbar {
   width: 100vw - 40px;
   background: rgba(6, 88, 182, 0.5) url("img/3920.jpg");
   background-size: cover;
