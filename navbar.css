@@ -35,7 +35,7 @@ nav a {
   text-decoration: none;
 }
 
-nav ul {
+ nav ul:not(.liensTel) {
   font-size: 20px;
   display: flex;
   list-style: none;
