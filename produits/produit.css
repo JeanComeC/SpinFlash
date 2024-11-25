@@ -1,6 +1,8 @@
 .corps {
     margin: 0 10%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fiche-produit {
@@ -11,19 +13,39 @@
 }
 
 .fiche-produit img {
+    flex: 1;
     max-width: 346px;
     aspect-ratio: 1/1;
     height: auto;
 }
 
-.fiche-produit .couleurs {
-    display: flex;
-    gap: 10px;
+.description {
+    flex: 1;
 }
 
-.fiche-produit .couleurs div {
+.description ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.description ul li {
+    margin: 10px 0;
+}
+
+.description .couleurs {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+
+.description p {
+    margin: 0;
+}
+
+.description .couleurs div {
     width: 1em;
     height: 1em;
     border-radius: 1em;
-    border: solid 1px #000000;
+    border: solid 1px #5a5a5a;
 }
