@@ -6,16 +6,18 @@ legend{
     color: rgb(186, 13, 13);
 }
 
-.conteneur {
+form {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+    flex-direction: column;
 }
 
-.gauche {
-    text-align: left;
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.droite {
-    text-align: right;
+fieldset p {
+    margin: 5px 20px;
 }

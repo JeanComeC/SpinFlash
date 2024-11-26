@@ -1,51 +1,57 @@
 .corps {
-    margin: 0 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 0 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
+.corps h1 {
+  text-align: center;
+} 
+
 .fiche-produit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
 }
 
 .fiche-produit img {
-    flex: 1;
-    max-width: 346px;
-    aspect-ratio: 1/1;
-    height: auto;
+  flex: 1;
+  max-width: 346px;
 }
 
 .description {
-    flex: 1;
+  flex: 1;
 }
 
 .description ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .description ul li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .description .couleurs {
-    display: flex;
-    gap: 10px;
-    margin: 0;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  justify-content: center;
 }
 
 .description p {
-    margin: 0;
+  margin: 0;
 }
 
 .description .couleurs div {
-    width: 1em;
-    height: 1em;
-    border-radius: 1em;
-    border: solid 1px #5a5a5a;
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  border: solid 1px #5a5a5a;
 }
