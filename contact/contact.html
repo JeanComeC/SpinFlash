@@ -117,62 +117,71 @@
         </li>
       </ul>
     </nav>
-    <form method="post" action="../index.html">
-      <fieldset>
-        <legend><h1>Contactez-nous :</h1></legend>
-        <i
-          >Merci de bien vouloir remplir entièrement le formulaire et l'envoyer
-          :</i
-        >
-        <hr />
-        <br />
-        <fieldset>
-          <legend>Identité :</legend>
-          <p>
-            Nom :<input type="text" name="fname" /> Prénom :<input
-              type="text"
-              name="iname"
-            />
-          </p>
-          <p>
-            Genre : <input type="radio" name="rb_systeme" />Homme
-            <input type="radio" name="rb_systeme" />Femme Âge :
-            <input type="number" name="âge" />
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Adresse mail</legend>
-          <p>Votre adresse mail : <input type="email" name="email" /></p>
-        </fieldset>
 
-        <fieldset>
-          <legend>Objet :</legend>
-          <p>
-            Quel est l'objet de votre mail ?
-            <select name="objet" id="objet">
-              <option value="1" selected>Service après vente</option>
-              <option value="2">Demande de stage</option>
-              <option value="3">Demande d'emploi</option>
-              <option value="4">Renseignements</option>
-              <option value="5">Remerciements</option>
-              <option value="6">Autre</option>
-            </select>
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Contenu :</legend>
-          <textarea name="contenu" cols="100" rows="8"></textarea
-          ><!--il faut trouver une classe qui flex-->
-          <p>
-            Voulez-vous nous transmettre des pièces jointes ?
-            <input type="file" name="piecejointe" />
-          </p>
-        </fieldset>
-        <br />
-        <input type="reset" name="btn" value="Tout Effacer" />
-        <input type="submit" name="btn" value="Envoyer" />
+    <form method="get" action="../index.html">
+      <!--J'ai mis method="get", car github n'accepte pas method="post"-->
+
+      <h1>Contactez-nous :</h1>
+      <i
+        >Merci de bien vouloir remplir entièrement le formulaire et l'envoyer
+        :</i
+      >
+      <hr />
+      <br />
+      <fieldset>
+        <legend>Identité :</legend>
+        <p>
+          <label>Nom : <input type="text" name="fname" required /></label
+          ><label> Prénom : <input type="text" name="iname" required /></label>
+        </p>
+        <p>
+          Genre :
+          <label><input type="radio" name="genre" required />Homme</label>
+          <label><input type="radio" name="genre" />Femme</label
+          ><label> Âge : <input type="number" name="âge" required /></label>
+        </p>
       </fieldset>
+      <fieldset>
+        <legend>Adresse mail</legend>
+        <p>
+          <label
+            >Votre adresse mail : <input type="email" name="email" required
+          /></label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Objet :</legend>
+        <p>
+          Quel est l'objet de votre mail ?
+          <select name="objet" id="objet">
+            <option value="1" selected>Service après vente</option>
+            <option value="2">Demande de stage</option>
+            <option value="3">Demande d'emploi</option>
+            <option value="4">Renseignements</option>
+            <option value="5">Remerciements</option>
+            <option value="6">Autre</option>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Contenu :</legend>
+        <textarea name="contenu" cols="100" rows="8" required></textarea
+        ><!--il faut trouver une classe qui flex-->
+        <p>
+          Voulez-vous nous transmettre des pièces jointes ?
+          <input type="file" name="piecejointe" />
+        </p>
+      </fieldset>
+      <br />
+      <input type="reset" name="btn" value="Tout Effacer" />
+      <input type="submit" name="btn" value="Envoyer" />
     </form>
+    <br />
+    <div class="contener">
+      <span class="gauche">gauche</span>
+      <span class="droite">droite</span>
+    </div>
 
     <script src="../script.js"></script>
   </body>

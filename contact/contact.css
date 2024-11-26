@@ -1,7 +1,21 @@
 h1{
-    color: blue;
+    color: #2178cc;
 }
 
 legend{
-    color: red;
+    color: rgb(186, 13, 13);
+}
+
+.conteneur {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.gauche {
+    text-align: left;
+}
+
+.droite {
+    text-align: right;
 }
