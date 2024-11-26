@@ -10,8 +10,9 @@
 } 
 
 .fiche-produit {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-items: center;
   width: 100%;
   justify-content: center;
@@ -19,12 +20,12 @@
 }
 
 .fiche-produit img {
-  flex: 1;
+  flex: 1 1 50%;
   max-width: 346px;
 }
 
 .description {
-  flex: 1;
+  flex: 1 1 50%;
 }
 
 .description ul {
