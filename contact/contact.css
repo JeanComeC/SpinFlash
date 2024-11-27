@@ -19,6 +19,11 @@ form {
     gap: 10px;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
+
 h1 {
     color: #2178cc;
 }
