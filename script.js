@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // bouton + animation Tel
+  // bouton + animation Produits Tel
 
   BtnProduitsTel.addEventListener("click", () => {
     if (ListeProduitsTel.classList.contains("produits-actif")) {
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // bouton + animation Ordi
+  // bouton + animation Produits Ordi
 
   BtnProduitsOrdi.addEventListener("click", () => {
     if (ListeProduitsOrdi.classList.contains("produits-actif")) {
