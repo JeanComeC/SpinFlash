@@ -1,3 +1,9 @@
+.corps {
+    display: flex;
+    margin: 0 10%;
+    flex-direction: column;
+}
+
 .coordonnees{
     display: flex;
     justify-content: space-around;
@@ -5,13 +11,12 @@
     flex-direction: column;
 }
 
-
-
 form {
     display: flex;
     justify-content: space-around;
     padding: 10px;
     flex-direction: column;
+    gap: 10px;
 }
 
 h1 {
@@ -35,6 +40,7 @@ fieldset {
     flex-wrap: wrap;
     border-color: #2178cc;
     border-style: ridge;
+    gap: 25px;
     
 }
 

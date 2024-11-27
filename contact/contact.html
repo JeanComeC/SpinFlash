@@ -117,97 +117,112 @@
         </li>
       </ul>
     </nav>
-    <div class="coordonnees">
-      <h1>Contactez-nous :</h1>
-      <i>
-        Merci de remplir obligatoirement tous les champs marqués d'un astérisque
-        (*).
-      </i>
-      <hr />
-      <br />
-    </div>
-
-
-
-    <form method="get" action="../index.html">
-      <!--J'ai mis method="get", car github n'accepte pas method="post"-->
-
-      <fieldset>
-        <legend>Identité :</legend>
-        <p>
-          <label>Nom * : <input type="text" name="fname" required /></label>
-        </p>
-        <p>
-          <label>
-            Prénom * : <input type="text" name="iname" required />
-          </label>
-        </p>
-        <p>
-          Genre :
-          <label><input type="radio" name="genre" required />Homme</label>
-          <label><input type="radio" name="genre" />Femme</label>
-        </p>
-        <p>
-          <label> Âge * : <input type="number" name="âge" required /></label>
-        </p>
-      </fieldset>
-
-      <fieldset>
-        <legend>Adresse mail</legend>
-        <p>
-          <label
-            >Votre adresse mail * : <input type="email" name="email" required
-          /></label>
-        </p>
-      </fieldset>
-
-      <fieldset>
-        <legend>Objet :</legend>
-        <p>
-          Quel est l'objet de votre mail ?
-          <select name="objet" id="objet">
-            <option value="1" selected>Service après vente</option>
-            <option value="2">Demande de stage</option>
-            <option value="3">Demande d'emploi</option>
-            <option value="4">Renseignements</option>
-            <option value="5">Remerciements</option>
-            <option value="6">Autre</option>
-          </select>
-        </p>
-      </fieldset>
-
-      <fieldset>
-        <legend>Contenu :</legend>
-        <textarea
-          class="contenu"
-          name="contenu"
-          cols="100"
-          rows="8"
-          required
-        ></textarea>
-        <p>
-          Pièces-jointes :
-          <input type="file" name="piecejointe" />
-        </p>
-      </fieldset>
-      
-      <br />
-      <div class="button">
-        <input
-          class="button_effacer"
-          type="reset"
-          name="btn"
-          value="Tout Effacer"
-        />
-        <input
-          class="button_envoyer"
-          type="submit"
-          name="btn"
-          value="Envoyer"
-        />
+    <!-- CORPS DE LA PAGE -->
+    <div class="corps">
+      <div class="coordonnees">
+        <h1>Contactez-nous :</h1>
+        <i>
+          Merci de remplir obligatoirement tous les champs marqués d'un
+          astérisque (*).
+        </i>
+        <hr />
+        <br />
       </div>
-    </form>
 
+      <form method="get" action="../index.html">
+        <!--J'ai mis method="get", car github n'accepte pas method="post"-->
+
+        <fieldset>
+          <legend>Identité :</legend>
+          <p>
+            <label
+              >Nom * :
+              <input type="text" name="fname" placeholder="Nom" required
+            /></label>
+          </p>
+          <p>
+            <label>
+              Prénom * :
+              <input type="text" name="iname" placeholder="Prénom" required />
+            </label>
+          </p>
+          <p>
+            Genre :
+            <label><input type="radio" name="genre" required />Homme</label>
+            <label><input type="radio" name="genre" />Femme</label>
+          </p>
+          <p>
+            <label
+              >Naissance * :
+              <input
+                type="number"
+                name="âge"
+                min="1900"
+                max="2024"
+                step="1"
+                value="2024"
+                required
+            /></label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Adresse mail</legend>
+          <p>
+            <label>
+              Votre adresse mail * :
+              <input type="email" name="email" required />
+            </label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Objet :</legend>
+          <p>
+            Quel est l'objet de votre mail ?
+            <select name="objet" id="objet">
+              <option value="1" selected>Service après vente</option>
+              <option value="2">Demande de stage</option>
+              <option value="3">Demande d'emploi</option>
+              <option value="4">Renseignements</option>
+              <option value="5">Remerciements</option>
+              <option value="6">Autre</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contenu :</legend>
+          <textarea
+            class="contenu"
+            name="contenu"
+            cols="100"
+            rows="8"
+            required
+          ></textarea>
+          <p>
+            Pièces-jointes :
+            <input type="file" name="piecejointe" />
+          </p>
+        </fieldset>
+
+        <br />
+        <div class="button">
+          <input
+            class="button_effacer"
+            type="reset"
+            name="btn"
+            value="Tout Effacer"
+          />
+          <input
+            class="button_envoyer"
+            type="submit"
+            name="btn"
+            value="Envoyer"
+          />
+        </div>
+      </form>
+    </div>
 
     <script src="../script.js"></script>
   </body>
