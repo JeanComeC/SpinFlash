@@ -6,17 +6,22 @@
 }
 
 .image{
+    width: 50%;
     border-radius: 10px;
     height: auto;
-    flex: 1 1 300px;
+    flex: 2 1 300px;
 }
 
 .text_description{
-    flex: 1 1 300px;
-    text-align: left;
+    flex: 1 2 300px;
+    text-align: justify;
 }
 
 .text_mission{
-    display: flex;
-    width: 50%;
+    flex: 1 2 300px;
+    text-align: justify;
+}
+
+h1{
+    color: rgb(186, 13, 13);
 }
