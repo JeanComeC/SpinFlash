@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image{
+    border-radius: 10px;
+    height: auto;
+    flex: 1 1 300px;
+}
+
+.text_description{
+    flex: 1 1 300px;
+    text-align: left;
+}
+
+.text_mission{
+    display: flex;
+    width: 50%;
+}
