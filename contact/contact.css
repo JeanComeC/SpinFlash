@@ -1,10 +1,11 @@
-h1{
-    color: #2178cc;
+.coordonnees{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-direction: column;
 }
 
-legend{
-    color: rgb(186, 13, 13);
-}
+
 
 form {
     display: flex;
@@ -13,11 +14,54 @@ form {
     flex-direction: column;
 }
 
+h1 {
+    color: #2178cc;
+}
+
+i {
+    color: rgb(116, 116, 116);
+}
+
+hr {
+    color: rgb(175, 175, 175);
+}
+
+.contenu {
+    width: 100%;
+}
+
 fieldset {
     display: flex;
     flex-wrap: wrap;
+    border-color: #2178cc;
+    border-style: ridge;
+    
 }
 
-fieldset p {
-    margin: 5px 20px;
+legend {
+    color: rgb(186, 13, 13);
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button_envoyer {
+    background-color: rgb(23, 99, 23);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.button_effacer {
+    background-color: rgb(173, 15, 15);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
 }
