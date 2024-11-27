@@ -19,9 +19,10 @@
   gap: 20px;
 }
 
-.fiche-produit img {
+.fiche-produit .image {
   flex: 1 1 50%;
-  max-width: 346px;
+  display: flex;
+  justify-content: center;
 }
 
 .description {
@@ -36,6 +37,7 @@
 }
 
 .description ul li {
+  display: block;
   margin: 10px 0;
 }
 
