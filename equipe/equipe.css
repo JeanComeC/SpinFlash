@@ -1,23 +1,104 @@
-.corps {
-    margin: 50px 10%;
+/* Général */
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(186, 13, 13);
 }
 
-.portraits {
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
+/* Conteneur principal */
+.team-container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
 }
 
-.portrait {
-    width: 250px;
-    height: 250px;
-    border-radius: 150px;
-    overflow: hidden;
-    border: solid 2px #505050;
+/* Images + noms */
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
 }
 
-.portrait img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.image-block {
+  text-align: center;
+  flex: 1;
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.job{
+    font-size: 14px;
+    color: #777;
+}
+
+/* Anecdote */
+.minipara {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px 0;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Biographies */
+.bio-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bio {
+  flex: 1 1 calc(50% - 20px);
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.bio h2 {
+  margin-top: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  /* Les images et leurs biographies s'empilent */
+  .image-row {
+    flex-direction: column;
+  }
+
+  .image-block {
+    margin-bottom: 20px;
+  }
+
+  .bio-row {
+    flex-direction: column;
+  }
+
+  .bio {
+    margin-bottom: 20px;
+  }
+
+  /* Anecdote entre les images et biographies */
+  .minipara {
+    order: 1; /* Anecdote toujours au milieu */
+  }
 }
