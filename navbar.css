@@ -167,7 +167,7 @@ ul {
   }
 }
 
-@media (max-width: 805px) {
+@media (max-width: 930px) {
   .ordi {
     display: none;
   }
@@ -176,7 +176,7 @@ ul {
   }
 }
 
-@media (min-width: 806px) {
+@media (min-width: 931px) {
   .tel {
     display: none;
   }

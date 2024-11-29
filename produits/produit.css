@@ -7,11 +7,13 @@
 
 .corps h1 {
   text-align: center;
-} 
+}
 
 .fiche-produit {
-  display: inline-flex;
+  display: flex;
+  flex: 1 1;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-items: center;
   width: 100%;
   justify-content: center;
@@ -24,20 +26,41 @@
   justify-content: center;
 }
 
+.fiche-produit .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  object-position: bottom;
+  min-width: 150px;
+}
+
 .description {
+  display: block;
   flex: 1 1 50%;
-  position: relative;
+  align-items: auto;
 }
 
-.description ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.container {
+  text-wrap: nowrap;
+  width: 100%;
+  min-width: 250px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: dense;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
   text-align: center;
-}
-
-.description ul li {
-  margin: 10px 0;
 }
 
 .description .couleurs {
