@@ -122,11 +122,134 @@
       </ul>
     </nav>
 
-    <form method="get" action="../index.html">
-      <fieldset>
-        <legend>Formulaire de Commande</legend>
-      </fieldset>
-    </form>
+    <div class="formulaire_commande">
+      <div class="coordonnees">
+        <h1>Commander :</h1>
+        <i>
+          Merci de remplir obligatoirement tous les champs marqués d'un
+          astérisque (*).
+        </i>
+        <hr />
+        <br />
+      </div>
+
+      <form method="get" action="../index.html">
+        <!--J'ai mis method="get", comme expliqué précédemment-->
+
+        <fieldset>
+          <legend>Informations Personnelles :</legend>
+          <p>
+            <label
+              >Nom * :
+              <input type="text" name="fname" placeholder="Nom" required
+            /></label>
+          </p>
+          <p>
+            <label>
+              Prénom * :
+              <input type="text" name="iname" placeholder="Prénom" required />
+            </label>
+          </p>
+          <p>
+            Majeur ? * :
+            <label><input type="radio" name="majeur" required />Oui</label>
+            <label><input type="radio" name="majeur" />Non</label>
+          </p>
+          <p>
+            <label>
+              Votre adresse mail * :
+              <input
+                type="email"
+                name="email"
+                placeholder="exemple@email.com"
+                required
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >N° de Téléphone * :
+              <input
+                type="tel"
+                name="telephone"
+                placeholder="+33 X XX XX XX XX"
+                required
+            /></label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Détails de la Commande</legend>
+          <label for="product">Produit :</label>
+          <select id="product" name="product" required>
+            <option value="" disabled selected>Choisissez un produit</option>
+            <option value="produit1">Produit 1</option>
+            <option value="produit2">Produit 2</option>
+            <option value="produit3">Produit 3</option>
+          </select>
+
+          <label for="quantity">Quantité :</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="100"
+            value="1"
+            required
+          />
+
+          <label for="date">Date de Livraison :</label>
+          <input type="date" id="date" name="delivery_date" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Adresse de livraison :</legend>
+          <label for="address">Adresse :</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Votre adresse"
+            required
+          />
+
+          <label for="city">Ville :</label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="Votre ville"
+            required
+          />
+
+          <label for="zip">Code Postal :</label>
+          <input
+            type="number"
+            id="zip"
+            name="zip"
+            placeholder="Votre code postal"
+            required
+          />
+        </fieldset>
+
+        <br />
+        <div class="button">
+          <input
+            class="button_annuler"
+            type="reset"
+            name="btn"
+            value="Annuler"
+          />
+          <input
+            class="button_valider"
+            type="submit"
+            name="btn"
+            value="Valider la commande"
+          />
+        </div>
+      </form>
+    </div>
 
     <script src="../script.js"></script>
   </body>
