@@ -31,7 +31,8 @@
               </li>
               <li class="ordi">
                 <a href="../contact/contact.html">Contact</a>
-              </li><li class="ordi">
+              </li>
+              <li class="ordi">
                 <a href="../equipe/equipe.html">Equipe</a>
               </li>
               <li class="ordi">
@@ -93,7 +94,8 @@
           </ul>
         </li>
         <li><a href="../apropos/apropos.html">À Propos</a></li>
-        <li><a href="../contact/contact.html">Contact</a></li><li><a href="../equipe/equipe.html">Equipe</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../equipe/equipe.html">Equipe</a></li>
         <li>
           <a href="../commande/commande.html" class="commanderTel">Commander</a>
         </li>
@@ -119,110 +121,132 @@
         </li>
       </ul>
     </nav>
-    <!-- CORPS DE LA PAGE -->
-    <div class="corps">
-      <div class="coordonnees">
-        <h1>Contactez-nous :</h1>
-        <i>
-          Merci de remplir obligatoirement tous les champs marqués d'un
-          astérisque (*).
-        </i>
-        <hr />
-        <br />
+
+    <div class="container">
+      <!--coordonnees-->
+      <div class="box_coordonnees">
+        <h1>Nos Coordonnées :</h1>
+        <ul>
+          <li><strong>Nom :</strong> SAS SpinFlash</li><br>
+          <li>
+            <strong>Téléphone :</strong>
+            <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+          </li><br>
+          <li>
+            <strong>Email :</strong>
+            <a href="mailto:contact@spinflash.com">contact@spinflash.com</a>
+          </li><br>
+          <li>
+            <strong>Adresse :</strong> 331 Bd Marcel Paul, 44800 Saint-Herblain, France
+          </li>
+        </ul>
       </div>
 
-      <form method="get" action="../index.html">
-        <!--J'ai mis method="get", car github n'accepte pas method="post"-->
-
-        <fieldset>
-          <legend>Identité :</legend>
-          <p>
-            <label
-              >Nom * :
-              <input type="text" name="fname" placeholder="Nom" required
-            /></label>
-          </p>
-          <p>
-            <label>
-              Prénom * :
-              <input type="text" name="iname" placeholder="Prénom" required />
-            </label>
-          </p>
-          <p>
-            Genre :
-            <label><input type="radio" name="genre" required />Homme</label>
-            <label><input type="radio" name="genre" />Femme</label>
-          </p>
-          <p>
-            <label
-              >Naissance * :
-              <input
-                type="number"
-                name="âge"
-                min="1900"
-                max="2024"
-                step="1"
-                value="2024"
-                required
-            /></label>
-          </p>
-        </fieldset>
-
-        <fieldset>
-          <legend>Adresse mail</legend>
-          <p>
-            <label>
-              Votre adresse mail * :
-              <input type="email" name="email" required />
-            </label>
-          </p>
-        </fieldset>
-
-        <fieldset>
-          <legend>Objet :</legend>
-          <p>
-            Quel est l'objet de votre mail ?
-            <select name="objet" id="objet">
-              <option value="1" selected>Service après vente</option>
-              <option value="2">Demande de stage</option>
-              <option value="3">Demande d'emploi</option>
-              <option value="4">Renseignements</option>
-              <option value="5">Remerciements</option>
-              <option value="6">Autre</option>
-            </select>
-          </p>
-        </fieldset>
-
-        <fieldset>
-          <legend>Contenu :</legend>
-          <textarea
-            class="contenu"
-            name="contenu"
-            rows="8"
-            required
-          ></textarea>
-          <p>
-            Pièces-jointes :
-            <input type="file" name="piecejointe" />
-          </p>
-        </fieldset>
-
-        <br />
-        <div class="button">
-          <input
-            class="button_effacer"
-            type="reset"
-            name="btn"
-            value="Tout Effacer"
-          />
-          <input
-            class="button_envoyer"
-            type="submit"
-            name="btn"
-            value="Envoyer"
-          />
+      <!--formulaire de contact-->
+      <div class="box_formulaire_contact">
+        <div class="coordonnees">
+          <h1>Contactez-nous :</h1>
+          <i>
+            Merci de remplir obligatoirement tous les champs marqués d'un
+            astérisque (*).
+          </i>
+          <hr />
+          <br />
         </div>
-      </form>
+
+        <form method="get" action="../index.html">
+          <!--J'ai mis method="get", car github n'accepte pas method="post"-->
+
+          <fieldset>
+            <legend>Identité :</legend>
+            <p>
+              <label
+                >Nom * :
+                <input type="text" name="fname" placeholder="Nom" required
+              /></label>
+            </p>
+            <p>
+              <label>
+                Prénom * :
+                <input type="text" name="iname" placeholder="Prénom" required />
+              </label>
+            </p>
+            <p>
+              Genre :
+              <label><input type="radio" name="genre" required />Homme</label>
+              <label><input type="radio" name="genre" />Femme</label>
+            </p>
+            <p>
+              <label
+                >Naissance * :
+                <input
+                  type="number"
+                  name="âge"
+                  min="1900"
+                  max="2024"
+                  step="1"
+                  value="2024"
+                  required
+              /></label>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Adresse mail</legend>
+            <p>
+              <label>
+                Votre adresse mail * :
+                <input type="email" name="email" required />
+              </label>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Objet :</legend>
+            <p>
+              Quel est l'objet de votre mail ?
+              <select name="objet" id="objet">
+                <option value="1" selected>Service après vente</option>
+                <option value="2">Demande de stage</option>
+                <option value="3">Demande d'emploi</option>
+                <option value="4">Renseignements</option>
+                <option value="5">Remerciements</option>
+                <option value="6">Autre</option>
+              </select>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Contenu :</legend>
+            <textarea
+              class="contenu"
+              name="contenu"
+              rows="8"
+              required
+            ></textarea>
+            <p>
+              Pièces-jointes :
+              <input type="file" name="piecejointe" />
+            </p>
+          </fieldset>
+
+          <br />
+          <div class="button">
+            <input
+              class="button_effacer"
+              type="reset"
+              name="btn"
+              value="Tout Effacer"
+            />
+            <input
+              class="button_envoyer"
+              type="submit"
+              name="btn"
+              value="Envoyer"
+            />
+          </div>
+        </form>
+      </div>
     </div>
 
     <script src="../script.js"></script>

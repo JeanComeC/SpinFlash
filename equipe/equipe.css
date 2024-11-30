@@ -6,7 +6,7 @@ h1 {
   color: rgb(186, 13, 13);
 }
 
-strong{
+strong {
   color: rgb(75, 75, 75);
 }
 /* Conteneur principal */
@@ -45,11 +45,11 @@ strong{
   margin-bottom: 10px;
 }
 
-.job{
-    font-size: 14px;
-    color: #777;
-    margin: 0;
-    margin-bottom: 10px;
+.job {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 /* Anecdote */
@@ -60,7 +60,7 @@ strong{
   background: #fff;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px rgb(0, 0, 0);
   text-align: justify;
 }
 
@@ -76,8 +76,9 @@ strong{
   background: #fff;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px rgb(0, 0, 0);
   box-sizing: border-box;
+  text-align: justify;
 }
 
 .bio h2 {
@@ -87,11 +88,11 @@ strong{
 /* Responsive Design */
 @media (max-width: 600px) {
   /* Les images et leurs biographies s'empilent */
-  .photo{
+  .photo {
     width: 250px;
     height: 250px;
   }
-  
+
   .image-row {
     flex-direction: column;
   }
