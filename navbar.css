@@ -188,7 +188,7 @@ ul {
   }
 }
 
-/*FOOTER*/ /*partie JC_le_goat*/
+/*FOOTER*/   /*partie JC_le_goat*/   /*Don't touch*/
 
 footer {
   background-color: #333;
@@ -253,7 +253,7 @@ footer {
   margin: 0;
 }
 
-/* Style responsive */
+
 @media (max-width: 600px) {
   .footer-container {
     flex-direction: column;
@@ -264,5 +264,4 @@ footer {
   .footer-section {
     margin-bottom: 20px;
   }
-
 }
