@@ -82,6 +82,10 @@
   font-weight: bold;
 }
 
+.description > p {
+  text-align: justify;
+}
+
 .description .couleurs div {
   width: 1em;
   height: 1em;
