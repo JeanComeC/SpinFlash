@@ -35,7 +35,7 @@ nav a {
   text-decoration: none;
 }
 
- nav ul:not(.liensTel) {
+nav ul:not(.liensTel) {
   font-size: 20px;
   display: flex;
   list-style: none;
@@ -118,7 +118,7 @@ nav .commander {
 }
 
 #liste-produits-tel {
-    width: 80%;
+  width: 80%;
 }
 
 .produit {
@@ -186,4 +186,78 @@ ul {
   .liensTel {
     display: none;
   }
+}
+
+/*FOOTER*/ /*partie JC_le_goat*/
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  padding: 15px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #f4c542;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: rgb(255, 227, 172);
+  text-decoration: none;
+}
+
+.footer-section p{
+  text-align: justify;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Bas du footeur */
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #444;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Style responsive */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+
 }
