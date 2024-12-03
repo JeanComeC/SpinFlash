@@ -11,16 +11,15 @@
 
 .fiche-produit {
   display: flex;
-  flex: 1 1;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-items: center;
   width: 100%;
   justify-content: center;
-  gap: 20px;
 }
 
 .fiche-produit .image {
+  width: auto;
+  max-width: 430px;
   flex: 1 1 50%;
   display: flex;
   justify-content: center;
@@ -38,15 +37,15 @@
 
 .description {
   display: block;
+  max-width: 430px;
   flex: 1 1 50%;
-  align-items: auto;
+  justify-content: center;
+  align-content: center;
 }
 
 .container {
   text-wrap: nowrap;
   width: 100%;
-  min-width: 250px;
-  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -61,6 +60,7 @@
   justify-items: center;
   align-items: center;
   text-align: center;
+  border: 3px solid black;
 }
 
 .description .couleurs {
