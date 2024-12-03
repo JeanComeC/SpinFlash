@@ -195,6 +195,7 @@ footer {
   color: #fff;
   padding: 20px 0;
   margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .footer-container {
@@ -246,6 +247,10 @@ footer {
   border-top: 1px solid #444;
   font-size: 14px;
   color: #aaa;
+}
+
+.footer-bottom p {
+  margin: 0;
 }
 
 /* Style responsive */
