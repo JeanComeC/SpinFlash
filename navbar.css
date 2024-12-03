@@ -1,6 +1,8 @@
+/*Page css pour la NAVBAR et le FOOTER*/
+
 @import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap");
 
-/* NAVBAR */
+/* NAVBAR */              /*partie Gabriel_le_goat (aussi)*/
 
 html,
 body {
@@ -188,7 +190,8 @@ ul {
   }
 }
 
-/*FOOTER*/   /*partie JC_le_goat*/   /*Don't touch*/
+
+/*FOOTER*/         /*partie JC_le_goat*/           /*Don't touch*/
 
 footer {
   background-color: #333;
