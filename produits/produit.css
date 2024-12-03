@@ -23,6 +23,7 @@
   flex: 1 1 50%;
   display: flex;
   justify-content: center;
+  align-items: start;
 }
 
 .fiche-produit .image img {
@@ -71,6 +72,18 @@
 
 .description p {
   margin: 0;
+}
+
+.description .titre-description {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.description > p {
+  text-align: justify;
 }
 
 .description .couleurs div {
