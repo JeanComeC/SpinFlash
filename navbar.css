@@ -300,6 +300,7 @@ footer {
   text-decoration: underline; /* Underline on hover */
 }
 
+
 /* Responsive behavior */
 @media (max-width: 768px) {
   .footer {
