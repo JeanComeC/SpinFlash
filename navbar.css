@@ -63,11 +63,16 @@ nav .commander {
   padding-left: calc(10% + 5px);
 }
 
+.liensTel li {
+  align-content: center;
+}
+
 .liensTel a {
   color: #000000;
   text-decoration: none;
   display: inline-block;
   position: relative;
+  margin-bottom: 5px;
 }
 
 .liensTel .commanderTel {
@@ -103,6 +108,8 @@ nav .commander {
 .prod {
   cursor: default;
 }
+
+
 
 .titre {
   font-size: 30px;
