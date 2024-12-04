@@ -74,8 +74,9 @@ nav .commander {
   background-color: #357294;
   border-radius: 8px;
   color: #ffffff;
-  padding: 0 5px;
+  padding: 5px 5px;
   left: -5px;
+  display: inline-flex;
 }
 
 /* gestion des animations menu */
