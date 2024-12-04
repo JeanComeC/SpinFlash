@@ -191,124 +191,60 @@ ul {
 }
 
 /*FOOTER*/ /*partie JC_le_goat*/ /*Don't touch*/
-/*
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
 
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-section {
-  flex: 1 1 300px;
-  padding: 15px;
-}
-
-.footer-section h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #f4c542;
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-  color: rgb(255, 227, 172);
-  text-decoration: none;
-}
-
-.footer-section p {
-  text-align: justify;
-}
-
-.footer-section ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Bas du footeur */ /*
-.footer-bottom {
-  text-align: center;
-  padding: 10px;
-  border-top: 1px solid #444;
-  font-size: 14px;
-  color: #aaa;
-}
-
-.footer-bottom p {
-  margin: 0;
-}
-
-@media (max-width: 600px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-section {
-    margin-bottom: 20px;
-  }
-}
-*/
 .footer {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping when there's no space */
-  justify-content: space-around; /* Space between the divs */
-  background-color: #222; /* Dark background color */
-  color: #fff; /* White text color */
-  padding: 20px;
-  text-align: center; /* Center text by default */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
 }
 
-/* Individual column styles */
 .footer-column {
-  flex: 1 1 300px; /* Minimum width of 300px, grow if possible */
-  margin: 10px;
-  padding: 10px;
-  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  flex: 1 1 300px;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
-/* Links styling */
+/* style liens */
 .footer-column ul {
   list-style: none;
   padding: 0;
 }
 
 .footer-column a {
-  color: #0dcaf0; /* Bootstrap-like cyan color */
+  color: #0dcaf0;
   text-decoration: none;
 }
 
 .footer-column a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
+.footer-bottom {
+  background-color: #111; /* Couleur de fond pour contraste */
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
 
-/* Responsive behavior */
+.footer-bottom p {
+  margin: 0; /* Supprime les marges par défaut */
+}
+
 @media (max-width: 768px) {
   .footer {
-    justify-content: center; /* Center columns when stacked */
+    justify-content: center;
   }
 
   .footer-column {
-    max-width: 100%; /* Full width for each column */
-    text-align: center; /* Ensure text stays centered */
+    max-width: 100%;
+    text-align: center;
   }
 }
