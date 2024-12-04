@@ -42,7 +42,6 @@ nav ul:not(.liensTel) {
   display: flex;
   list-style: none;
   gap: 35px;
-  align-content: center;
   align-items: center;
 }
 
