@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap");
 
-/* NAVBAR */              /*partie Gabriel_le_goat (aussi)*/
+/* NAVBAR */ /*partie Gabriel_le_goat (aussi)*/
 
 html,
 body {
@@ -190,9 +190,8 @@ ul {
   }
 }
 
-
-/*FOOTER*/         /*partie JC_le_goat*/           /*Don't touch*/
-
+/*FOOTER*/ /*partie JC_le_goat*/ /*Don't touch*/
+/*
 footer {
   background-color: #333;
   color: #fff;
@@ -235,7 +234,7 @@ footer {
   text-decoration: none;
 }
 
-.footer-section p{
+.footer-section p {
   text-align: justify;
 }
 
@@ -243,7 +242,7 @@ footer {
   text-decoration: underline;
 }
 
-/* Bas du footeur */
+/* Bas du footeur */ /*
 .footer-bottom {
   text-align: center;
   padding: 10px;
@@ -256,7 +255,6 @@ footer {
   margin: 0;
 }
 
-
 @media (max-width: 600px) {
   .footer-container {
     flex-direction: column;
@@ -266,5 +264,50 @@ footer {
 
   .footer-section {
     margin-bottom: 20px;
+  }
+}
+*/
+.footer {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping when there's no space */
+  justify-content: space-around; /* Space between the divs */
+  background-color: #222; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 20px;
+  text-align: center; /* Center text by default */
+}
+
+/* Individual column styles */
+.footer-column {
+  flex: 1 1 300px; /* Minimum width of 300px, grow if possible */
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Links styling */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column a {
+  color: #0dcaf0; /* Bootstrap-like cyan color */
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .footer {
+    justify-content: center; /* Center columns when stacked */
+  }
+
+  .footer-column {
+    max-width: 100%; /* Full width for each column */
+    text-align: center; /* Ensure text stays centered */
   }
 }
