@@ -74,7 +74,7 @@
   margin: 0;
 }
 
-.description .titre-description {
+.titre-description {
   font-size: 20px;
   text-align: center;
   margin-top: 20px;
@@ -82,8 +82,8 @@
   font-weight: bold;
 }
 
-.description > p {
-  text-align: justify;
+p:not(.fiche-produit p) {
+  text-align: center;
 }
 
 .description .couleurs div {
