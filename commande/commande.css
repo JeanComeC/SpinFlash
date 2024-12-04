@@ -24,7 +24,7 @@ form {
   gap: 10px;
 }
 
-p {
+.formulaire_commande p {
   padding: 0;
   margin: 0;
 }
@@ -33,7 +33,7 @@ h1 {
   color: rgb(186, 13, 13);
 }
 
-i {
+.formulaire_commande i {
   color: rgb(116, 116, 116);
 }
 
