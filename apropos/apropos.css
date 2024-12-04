@@ -6,11 +6,10 @@
 }
 
 .image{
-    max-width: 100%;
-    min-height: 400px;
-    border-radius: 10px;
-    height: auto;
+    height: 100%;
+    aspect-ratio: 1/1;
     flex: 1 1 auto;
+    border-radius: 20px;
 }
 
 .text_description{
@@ -19,6 +18,7 @@
 }
 
 .text_mission{
+    min-width: 50%;
     flex: 1 1 300px;
     text-align: justify;
 }
