@@ -49,6 +49,7 @@ nav .commander {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 0 5px;
+  display: flex;
 }
 
 .liensTel {
