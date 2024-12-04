@@ -42,6 +42,7 @@
   flex: 1 1 50%;
   justify-content: center;
   align-content: center;
+  align-items: center;
 }
 
 .container {
@@ -63,15 +64,17 @@
   text-align: center;
 }
 
-.description .couleurs {
+.vitesse_transfert {
   display: flex;
-  gap: 10px;
-  margin: 0;
-  justify-content: center;
 }
 
 .description p {
   margin: 0;
+  align-content: center;
+}
+
+#carac {
+  margin-bottom: 20px;
 }
 
 .titre-description {
