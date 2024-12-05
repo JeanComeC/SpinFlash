@@ -1,3 +1,49 @@
 .corps {
-    margin: ;
+  margin: 0 10%;
+}
+
+.corps h1 {
+    text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+.ligne1 h2 {
+    margin-bottom: 0;
+}
+
+.ligne1 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nom {
+    font-size: 1.5em;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 20px;
+}
+
+.vitesse_transfert {
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
