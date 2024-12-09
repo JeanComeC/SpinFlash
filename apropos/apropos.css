@@ -1,32 +1,32 @@
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+.container {
+  display: flex; /* Active le mode flexbox pour un alignement flexible */
+  flex-wrap: wrap; /* Permet le retour à la ligne si les éléments dépassent la largeur du conteneur */
+  gap: 20px; /* Espacement entre les éléments */
+  padding: 20px; /* Espacement interne autour du contenu */
 }
 
-.image{
-    height: 100%;
-    aspect-ratio: 1/1;
-    flex: 1 1 auto;
-    border-radius: 20px;
+.image {
+  height: 100%; /* L'image occupe toute la hauteur disponible */
+  aspect-ratio: 1/1; /* Maintient un rapport largeur/hauteur carré */
+  flex: 1 1 auto; /* Ajuste la taille de l'image proportionnellement, sans contrainte stricte */
+  border-radius: 20px; /* Ajoute des coins arrondis à l'image */
 }
 
-.text_description{
-    flex: 1 1 300px;
-    text-align: justify;
+.text_description {
+  flex: 1 1 300px; /* Définit une largeur de base de 300px tout en permettant l'ajustement */
+  text-align: justify; /* Aligne le texte avec des bords droits */
 }
 
-.text_mission{
-    min-width: 50%;
-    flex: 1 1 300px;
-    text-align: justify;
+.text_mission {
+  min-width: 50%; /* Assure que le bloc occupe au moins 50% de la largeur du conteneur */
+  flex: 1 1 300px; /* Largeur de base de 300px avec ajustement flexible */
+  text-align: justify; /* Alignement justifié du texte */
 }
 
-h1{
-    color: rgb(186, 13, 13);
+h1 {
+  color: rgb(186, 13, 13); /* Définit une couleur rouge foncé spécifique */
 }
 
-p{
-    font-size: 18px;
+p {
+  font-size: 18px; /* Taille de police standard pour le texte */
 }

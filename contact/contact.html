@@ -141,7 +141,7 @@
     </nav>
 
     <div class="container">
-      <!--coordonnees-->
+      <!-- Section des coordonnées de l'entreprise -->
       <div class="box_coordonnees">
         <h1>Nos Coordonnées :</h1>
         <ul>
@@ -149,11 +149,13 @@
           <br />
           <li>
             <strong>Téléphone :</strong>
+            <!-- Lien cliquable pour appeler directement depuis un appareil -->
             <a href="tel:+33123456789">+33 1 23 45 67 89</a>
           </li>
           <br />
           <li>
             <strong>Email :</strong>
+            <!-- Lien mailto pour ouvrir le client de messagerie par défaut -->
             <a href="mailto:contact@spinflash.com">contact@spinflash.com</a>
           </li>
           <br />
@@ -164,11 +166,12 @@
         </ul>
       </div>
 
-      <!--formulaire de contact-->
+      <!-- Formulaire de contact -->
       <div class="box_formulaire_contact">
         <div class="coordonnees">
           <h1>Contactez-nous :</h1>
           <i>
+            <!-- Message d'information sur les champs obligatoires -->
             Merci de remplir obligatoirement tous les champs marqués d'un
             astérisque (*).
           </i>
@@ -177,37 +180,47 @@
         </div>
 
         <form method="get" action="../index.html">
-          <!--J'ai mis method="get", car github n'accepte pas method="post"-->
+          <!-- Utilisation de method="get" pour compatibilité avec GitHub Pages -->
 
+          <!-- Informations d'identité -->
           <fieldset>
             <legend>Identité :</legend>
             <p>
               <label
                 >Nom * :
-                <input type="text" name="fname" placeholder="Nom" required
-              /></label>
+                <!-- Champ obligatoire pour le nom -->
+                <input type="text" name="fname" placeholder="Nom" required />
+              </label>
             </p>
             <p>
-              <label>
-                Prénom * :
+              <label
+                >Prénom * :
+                <!-- Champ obligatoire pour le prénom -->
                 <input type="text" name="iname" placeholder="Prénom" required />
               </label>
             </p>
             <p>
               Genre :
+              <!-- Boutons radio pour sélectionner le genre -->
               <label><input type="radio" name="genre" required />Homme</label>
               <label><input type="radio" name="genre" />Femme</label>
             </p>
             <p>
-              <label>Naissance * : <input type="date" required /></label>
+              <label
+                >Naissance * :
+                <!-- Sélecteur de date obligatoire -->
+                <input type="date" required />
+              </label>
             </p>
           </fieldset>
 
+          <!-- Adresse mail -->
           <fieldset>
             <legend>Adresse mail</legend>
             <p>
-              <label>
-                Votre adresse mail * :
+              <label
+                >Votre adresse mail * :
+                <!-- Champ obligatoire pour l'adresse email avec validation -->
                 <input
                   type="email"
                   name="email"
@@ -218,9 +231,11 @@
             </p>
           </fieldset>
 
+          <!-- Objet du message -->
           <fieldset>
             <legend>Objet :</legend>
             <p>
+              <!-- Liste déroulante pour choisir l'objet du mail -->
               Quel est l'objet de votre mail ?
               <select name="objet" id="objet">
                 <option value="1" selected>Service après vente</option>
@@ -233,8 +248,10 @@
             </p>
           </fieldset>
 
+          <!-- Contenu du message -->
           <fieldset>
             <legend>Contenu :</legend>
+            <!-- Zone de texte pour écrire le message -->
             <textarea
               class="contenu"
               name="contenu"
@@ -242,6 +259,7 @@
               required
             ></textarea>
             <p>
+              <!-- Champ pour joindre un fichier -->
               Pièces-jointes :
               <input
                 style="max-width: 100%; width: 100%"
@@ -252,13 +270,16 @@
           </fieldset>
 
           <br />
+          <!-- Boutons d'action -->
           <div class="button">
+            <!-- Bouton pour réinitialiser tous les champs -->
             <input
               class="button_effacer"
               type="reset"
               name="btn"
               value="Tout Effacer"
             />
+            <!-- Bouton pour envoyer le formulaire -->
             <input
               class="button_envoyer"
               type="submit"

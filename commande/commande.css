@@ -1,27 +1,27 @@
 .formulaire_commande {
-  flex: 2;
-  align-items: center;
-  padding: 30px;
-  margin: 30px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px rgb(0, 0, 0);
-  box-sizing: border-box;
+  flex: 2; /* Occupe deux fois l'espace par rapport aux autres éléments flex adjacents */
+  align-items: center; /* Aligne le contenu au centre (utile avec Flexbox) */
+  padding: 30px; /* Espacement interne autour du contenu */
+  margin: 30px; /* Espacement externe autour du conteneur */
+  background: #ffffff; /* Fond blanc pour le formulaire */
+  border-radius: 10px; /* Coins arrondis pour un design plus doux */
+  box-shadow: 0px 2px 5px rgb(0, 0, 0); /* Ombre légère pour un effet surélevé */
+  box-sizing: border-box; /* Inclut les bordures et le padding dans la taille totale */
 }
 
 .coordonnees {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  flex-direction: column;
+  display: flex; /* Active le mode flexbox */
+  justify-content: space-around; /* Espacement égal entre les éléments */
+  padding: 10px; /* Espacement interne */
+  flex-direction: column; /* Aligne les éléments verticalement */
 }
 
 form {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  flex-direction: column;
-  gap: 10px;
+  display: flex; /* Active le mode flexbox */
+  justify-content: space-around; /* Espacement égal entre les champs */
+  padding: 10px; /* Espacement interne */
+  flex-direction: column; /* Organise les éléments verticalement */
+  gap: 10px; /* Espacement entre chaque champ */
 }
 
 .formulaire_commande p {
@@ -30,45 +30,45 @@ form {
 }
 
 h1 {
-  color: rgb(186, 13, 13);
+  color: rgb(186, 13, 13); /* Rouge foncé pour le titre */
 }
 
 .formulaire_commande i {
-  color: rgb(116, 116, 116);
+  color: rgb(116, 116, 116); /* Gris pour une apparence discrète */
 }
 
 fieldset {
-  display: flex;
-  flex-wrap: wrap;
-  border-color: #2178cc;
-  border-style: ridge;
-  gap: 25px;
+  display: flex; /* Active le mode flexbox */
+  flex-wrap: wrap; /* Permet le retour à la ligne des champs si nécessaire */
+  border-color: #2178cc; /* Couleur bleue pour les bordures */
+  border-style: ridge; /* Style de bordure en relief */
+  gap: 25px; /* Espacement entre les champs */
 }
 
 legend {
-  color: rgb(186, 13, 13);
+  color: rgb(186, 13, 13); /* Rouge foncé pour se démarquer */
 }
 
 .button {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  display: flex; /* Active le mode flexbox */
+  justify-content: space-between; /* Boutons alignés aux extrémités */
+  width: 100%; /* Les boutons occupent toute la largeur disponible */
 }
 
 .button_valider {
-  background-color: rgb(23, 99, 23);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 5px 10px;
+  background-color: rgb(23, 99, 23); /* Vert foncé pour une action positive */
+  color: white; /* Texte blanc pour un contraste clair */
+  border: none; /* Retire les bordures par défaut */
+  border-radius: 5px; /* Coins légèrement arrondis */
+  cursor: pointer; /* Change le curseur en pointeur au survol */
+  padding: 5px 10px; /* Espacement interne pour le confort de clic */
 }
 
 .button_annuler {
-  background-color: rgb(173, 15, 15);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 5px 10px;
+  background-color: rgb(173, 15, 15); /* Rouge foncé pour une action d'annulation */
+  color: white; /* Texte blanc pour un contraste clair */
+  border: none; /* Retire les bordures par défaut */
+  border-radius: 5px; /* Coins légèrement arrondis */
+  cursor: pointer; /* Change le curseur en pointeur au survol */
+  padding: 5px 10px; /* Espacement interne pour le confort de clic */
 }
