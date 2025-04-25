@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.style.overflow = "hidden";
   document.body.prepend(loaderBackground);
   const loader = document.createElement("img");
-  loader.src = "img/fidget-spinner-svgrepo-com.svg";
+  loader.src = "img/icons8-fidget-spinner-100.png";
   loader.style.position = "absolute";
   loader.style.width = "100px";
   loader.style.height = "100px";
-  loader.style.animation = "rotation 0.2s linear infinite";
+  loader.style.animation = "rotation 0.5s linear infinite";
 
   
   document.getElementById("loaderBackground").appendChild(loader);
