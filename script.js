@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.prepend(loaderBackground);
   const loader = document.createElement("img");
   if (document.location.href.includes("index.html")) {
-    loader.src = "img/icons8-fidget-spinner.gif";
+    loader.src = "img/icons8-fidget-spinner-100.png";
   } else {
-    loader.src = "../img/icons8-fidget-spinner.gif";
+    loader.src = "../img/icons8-fidget-spinner-100.png";
   }
   loader.style.position = "absolute";
   loader.style.width = "100px";
