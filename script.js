@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const ListeProduitsOrdi = document.querySelector("#liste-produits-ordi");
   const arrowTel = document.querySelector("#arrow-tel");
   const arrowOrdi = document.querySelector("#arrow-ordi");
+  const equipe = document.querySelectorAll("a.equipe");
 
   //loader
   const loaderBackground = document.createElement("div");
@@ -28,6 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
   loader.style.position = "absolute";
   loader.style.width = "100px";
   loader.style.height = "100px";
+  loader.style.bottom = "0";
+  loader.style.left = "-100px";
+  loader.style.animation = "rotation 2s 1 linear";
 
   document.getElementById("loaderBackground").appendChild(loader);
 
@@ -90,5 +94,15 @@ document.addEventListener("DOMContentLoaded", () => {
       ListeProduitsOrdi.classList.add("produits-actif");
       arrowOrdi.style.transform = "rotate(180deg)";
     }
+  });
+
+  equipe.forEach((e) => {
+    e.addEventListener("click", (e) => {
+      if (window.confirm("Êtes-vous sûr de vouloir quitter cette page ?")) {
+        window.location;
+      } else {
+        e.preventDefault();
+      }
+    });
   });
 });
