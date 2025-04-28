@@ -13,8 +13,10 @@ function main() {
 
     // Appliquer un effet "argenté" (grisé métallique)
     const gradient = ctx.createLinearGradient(0, 0, width, height);
-    gradient.addColorStop(0, "#C0C0C0");
-    gradient.addColorStop(1, "#A9A9A9");
+    gradient.addColorStop(0, "#d4d4d4"); // Gris clair argent
+    gradient.addColorStop(0.3, "#c0c0c0"); // Gris plus foncé
+    gradient.addColorStop(0.6, "#a9a9a9"); // Gris plus foncé
+    gradient.addColorStop(1, "#d4d4d4"); // Gris clair pour "reflets"
     ctx.fillStyle = gradient;
 
     ctx.beginPath();
@@ -43,7 +45,7 @@ function main() {
 
       ctx.globalCompositeOperation = "destination-out";
       ctx.beginPath();
-      ctx.arc(x, y, 20, 0, Math.PI * 2);
+      ctx.arc(x, y, 10, 0, Math.PI * 2);
       ctx.fill();
       ctx.globalCompositeOperation = "source-over";
     });
