@@ -20,15 +20,18 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.style.overflow = "hidden";
   document.body.prepend(loaderBackground);
   const loader = document.createElement("img");
-  loader.src = "img/icons8-fidget-spinner-100.png";
+  if (document.location.href.includes("index.html")) {
+    loader.src = "img/icons8-fidget-spinner-100.png";
+  } else {
+    loader.src = "../img/icons8-fidget-spinner-100.png";
+  }
   loader.style.position = "absolute";
   loader.style.width = "100px";
   loader.style.height = "100px";
   loader.style.animation = "rotation 0.5s linear infinite";
 
-  
   document.getElementById("loaderBackground").appendChild(loader);
-  
+
   setTimeout(() => {
     document.body.style.overflow = "auto";
     loaderBackground.style.display = "none";
