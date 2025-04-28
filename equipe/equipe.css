@@ -38,6 +38,17 @@ strong {
   margin-bottom: 10px;
 }
 
+.grattage-canvas{
+  position:block;
+  top: 0;
+  left:0;
+  width:90%;
+  height:90%;
+  border-radius: 50%;
+  z-index:2;/*pour mettre le canvas sur l'image*/
+  pointer-events: auto; /* important, sinon le canvas bloque la souris */
+}
+
 .name {
   font-size: 18px;
   font-weight: bold;
