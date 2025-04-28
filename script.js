@@ -21,14 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.prepend(loaderBackground);
   const loader = document.createElement("img");
   if (document.location.href.includes("index.html")) {
-    loader.src = "img/icons8-fidget-spinner-100.png";
+    loader.src = "img/icons8-fidget-spinner.gif";
   } else {
-    loader.src = "../img/icons8-fidget-spinner-100.png";
+    loader.src = "../img/icons8-fidget-spinner.gif";
   }
   loader.style.position = "absolute";
   loader.style.width = "100px";
   loader.style.height = "100px";
-  loader.style.animation = "rotation 0.5s linear infinite";
 
   document.getElementById("loaderBackground").appendChild(loader);
 
