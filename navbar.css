@@ -37,6 +37,15 @@ nav a {
   text-decoration: none;
 }
 
+.heure-et-chrono {
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(2px);
+  padding: 0px 20px;
+  align-items: center;
+  gap: 10px;
+}
+
 nav ul:not(.liensTel) {
   font-size: 20px;
   display: flex;
@@ -256,5 +265,16 @@ ul {
   .footer-column {
     max-width: 100%;
     text-align: center;
+  }
+}
+
+/* ANIMATION LOADER */
+
+@keyframes rotation {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
   }
 }

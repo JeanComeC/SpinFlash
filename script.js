@@ -22,16 +22,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.prepend(loaderBackground);
   const loader = document.createElement("img");
   if (document.location.href.includes("index.html")) {
-    loader.src = "img/icons8-fidget-spinner-100.png";
+    loader.src = "img/1017000-200.png";
   } else {
-    loader.src = "../img/icons8-fidget-spinner-100.png";
+    loader.src = "../img/1017000-200.png";
   }
   loader.style.position = "absolute";
   loader.style.width = "100px";
   loader.style.height = "100px";
-  loader.style.bottom = "0";
-  loader.style.left = "-100px";
-  loader.style.animation = "rotation 2s 1 linear";
+  loader.style.animation = "rotation 0.5s linear infinite";
 
   document.getElementById("loaderBackground").appendChild(loader);
 
@@ -105,4 +103,58 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // Horloge Et Chronometre
+
+  const horloge = document.getElementById("heure");
+  const heure = document.getElementById("chrono-heures");
+  const minute = document.getElementById("chrono-minutes");
+  const seconde = document.getElementById("chrono-secondes");
+
+  let heure_temp = "0";
+  let minute_temp = "0";
+  let seconde_temp = "0";
+
+  setInterval(function () {
+    updateClockAndTimer(
+      horloge,
+      heure,
+      minute,
+      seconde,
+      heure_temp,
+      minute_temp,
+      seconde_temp
+    );
+  }, 1000);
+
+  setInterval(function () {
+    seconde_temp = parseInt(seconde_temp) + 1;
+    seconde_temp = seconde_temp.toString();
+    if (seconde_temp >= 60) {
+      seconde_temp = "0";
+      minute_temp = parseInt(minute_temp) + 1;
+      minute_temp = minute_temp.toString();
+    }
+    if (minute_temp >= 60) {
+      minute_temp = "0";
+      heure_temp = parseInt(heure_temp) + 1;
+      heure_temp = heure_temp.toString();
+    }
+
+    heure.innerHTML = heure_temp.padStart(2, "0");
+    minute.innerHTML = minute_temp.padStart(2, "0");
+    seconde.innerHTML = seconde_temp.padStart(2, "0");
+  }, 1000);
 });
+
+function updateClockAndTimer(horloge) {
+  // Horloge
+
+  let datetime = new Date();
+
+  horloge.innerHTML = datetime.toLocaleTimeString("fr-FR", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
+}

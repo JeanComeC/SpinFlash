@@ -6,7 +6,7 @@
     <title>SPINFLASH - Accueil</title>
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="icon" type="image/png" href="img/icon.png" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0"
@@ -36,7 +36,9 @@
               <!-- Liens principaux pour les écrans larges -->
               <li class="ordi"><a href="apropos/apropos.html">À Propos</a></li>
               <li class="ordi"><a href="contact/contact.html">Contact</a></li>
-              <li class="ordi"><a href="equipe/equipe.html" class="equipe">Equipe</a></li>
+              <li class="ordi">
+                <a href="equipe/equipe.html" class="equipe">Equipe</a>
+              </li>
               <li class="ordi">
                 <!-- Lien vers la page de commande avec une icône panier -->
                 <a href="commande/commande.html" class="commander">
@@ -55,6 +57,14 @@
                 </span>
               </li>
             </ul>
+          </div>
+        </div>
+        <div class="heure-et-chrono">
+          <div class="heure">Horloge : <span id="heure"></span></div>
+          <div class="chrono">
+            Temps sur la page :
+            <span id="chrono-heures"></span>: <span id="chrono-minutes"></span>:
+            <span id="chrono-secondes"></span>
           </div>
         </div>
       </div>
