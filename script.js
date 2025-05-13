@@ -9,7 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const arrowOrdi = document.querySelector("#arrow-ordi");
   const equipe = document.querySelectorAll("a.equipe");
 
-  //loader
+  //--------------------------------------
+  //               loader
+  //--------------------------------------
+
   const loaderBackground = document.createElement("div");
   loaderBackground.style.display = "flex";
   loaderBackground.style.justifyContent = "center";
@@ -39,7 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.removeChild(loaderBackground);
   }, 2000);
 
-  // bouton + animation menu version telephone
+  //--------------------------------------
+  //   bouton + animation menu version telephone
+  //--------------------------------------
 
   menuButton.addEventListener("click", () => {
     if (liensTel.classList.contains("menu-actif")) {
@@ -58,7 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  //--------------------------------------
   // bouton + animation Produits Tel
+  //--------------------------------------
 
   BtnProduitsTel.addEventListener("click", () => {
     if (ListeProduitsTel.classList.contains("produits-actif")) {
@@ -78,7 +85,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  //--------------------------------------
   // bouton + animation Produits Ordi
+  //--------------------------------------
 
   BtnProduitsOrdi.addEventListener("click", () => {
     if (ListeProduitsOrdi.classList.contains("produits-actif")) {
@@ -104,7 +113,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  //--------------------------------------
   // Horloge Et Chronometre
+  //--------------------------------------
 
   const horloge = document.getElementById("heure");
   const heure = document.getElementById("chrono-heures");
@@ -145,7 +156,25 @@ document.addEventListener("DOMContentLoaded", () => {
     minute.innerHTML = minute_temp.padStart(2, "0");
     seconde.innerHTML = seconde_temp.padStart(2, "0");
   }, 1000);
+
+  //--------------------------------------
+  //        Copier / Plagiat
+  //--------------------------------------
+
+  document.addEventListener("copy", (e) => {
+    let clipboardData = e.clipboardData || window.clipboardData;
+
+    if (clipboardData) {
+      console.log("Copie détectée !");
+    }
+  });
 });
+
+// ----------------------------------------------------
+//
+//                      FONCTIONS
+//
+// ----------------------------------------------------
 
 function updateClockAndTimer(horloge) {
   // Horloge
