@@ -33,8 +33,8 @@ Pour exécuter le projet localement :
 - **GitHub Pages** : Hébergement du site.
 
 ## Collaborateurs
-- **Jeancomec** : Développeur principal, responsable de la conception et du développement du site ([GitHub](https://github.com/jeancomec)).
-- *[Ajoutez d’autres collaborateurs ici, avec leur rôle et lien GitHub si applicable]*
+- **Jeancomec** : Co-Développeur principal, responsable de la conception et du développement du site ([GitHub](https://github.com/jeancomec)).
+- **ParzivalPy** : Co-Développeur principal, responsable de la conception et du développement du site
 
 *Note : Si d’autres personnes ont contribué au projet, veuillez fournir leurs noms, rôles et liens GitHub pour mettre à jour cette section.*
 
