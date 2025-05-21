@@ -1,4 +1,4 @@
-function main() {
+function grattage() {
   const canvases = document.querySelectorAll(".grattage-canvas");
 
   canvases.forEach((canvas) => {
@@ -52,5 +52,31 @@ function main() {
   });
 }
 
+function modeedition(){
+
+    //fenetre prompt:
+    let resultat_user = window.prompt("Enter user :");
+    let resultat_pwd;
+    if(resultat_user=="admin"){
+        resultat_pwd = window.prompt("Enter password :");
+    }
+    if (resultat_pwd == "admin_pwd"){
+        console.log("Admin connecté");
+        //
+        return;
+    }
+    console.log("Admin non connecté");
+    
+}
+
+function main() {
+    grattage();
+}
+
 // Exécuter main quand la page est chargée
 window.addEventListener("DOMContentLoaded", main);
+
+
+
+// getElementbyid
+// .innerText
