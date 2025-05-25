@@ -38,19 +38,19 @@ strong {
 
 .photo {
   width: 100%;
-  height:100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.grattage-canvas{
-  position:absolute;
+.grattage-canvas {
+  position: absolute;
   top: 0;
-  left:0;
-  width:100%;
-  height:100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  z-index:2;/*pour mettre le canvas sur l'image*/
+  z-index: 2; /*pour mettre le canvas sur l'image*/
   pointer-events: auto; /* important, sinon le canvas bloque la souris */
 }
 
@@ -100,6 +100,23 @@ strong {
 .bio h2 {
   margin-top: 0;
 }
+
+.boutton_edition {
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+}
+
+.boutton_modeedition {
+    background-color: red;     /* couleur de fond */
+    color: white;              /* couleur du texte */
+    border: none;              /* enlève la bordure par défaut */
+    border-radius: 10px;       /* arrondit les angles */
+    padding: 10px 20px;        /* espace intérieur */
+    font-size: 16px;           /* taille du texte */
+    cursor: pointer;           /* change le curseur au survol */
+    height: 50px;
+  }  
 
 /* Responsive Design */
 @media (max-width: 600px) {

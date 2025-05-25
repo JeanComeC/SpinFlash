@@ -53,7 +53,6 @@ function grattage() {
 }
 
 function modeedition(){
-
     //fenetre prompt:
     let resultat_user = window.prompt("Enter user :");
     let resultat_pwd;
