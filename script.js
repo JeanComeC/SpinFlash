@@ -165,7 +165,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let clipboardData = e.clipboardData || window.clipboardData;
 
     if (clipboardData) {
-      console.log("Copie détectée !");
+      console.log(
+        "Le plagiat consiste à s’approprier le travail ou les idées d’autrui sans les citer. Il est interdit dans les contextes scolaires, universitaires et professionnels. Toute source utilisée doit être clairement mentionnée, qu’il s’agisse d’un texte, d’une image ou d’une idée. Le respect de ces règles garantit l’intégrité intellectuelle de chacun. Le non-respect peut entraîner des sanctions allant de l’avertissement à l’exclusion."
+      );
     }
   });
 });
