@@ -73,7 +73,7 @@ function main() {
     grattage();
 }
 
-// Exécuter main quand la page est chargée
+// Exécuter le main quand la page est chargée
 window.addEventListener("DOMContentLoaded", main);
 
 
