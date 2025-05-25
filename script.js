@@ -189,3 +189,22 @@ function updateClockAndTimer(horloge) {
     second: "2-digit",
   });
 }
+
+function sonnerie_tel(){
+  console.log("c bon");
+  let fprompt = window.prompt(
+    "Si vous voulez appeler ce numéro : +33 (0)2 30 13 05 60, entrez le de nouveau dans le champ ci-dessous puis validez"
+  );
+  if(fprompt=="+33 (0)2 30 13 05 60" || fprompt=="0230130560" || fprompt=="+33 2 30 13 05 60"){
+    console.log("Vous appelez ce numéro : +33 (0)2 30 13 05 60");
+    // Joue la sonnerie
+    const ringtone = document.getElementById("ringtone");
+    ringtone.play();
+
+    // Arrête la sonnerie après 5 secondes
+    setTimeout(() => {
+      ringtone.pause();
+      ringtone.currentTime = 0;
+    }, 5000);
+  }
+}
