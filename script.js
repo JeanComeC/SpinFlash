@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.style.overflow = "hidden";
   document.body.prepend(loaderBackground);
   const loader = document.createElement("img");
-  if (document.location.href.includes("index.html")) {
+  if (document.location.href.includes("index.html") || document.location.href.includes("")) {
     loader.src = "img/1017000-200.png";
   } else {
     loader.src = "../img/1017000-200.png";
