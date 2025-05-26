@@ -262,6 +262,12 @@ ul {
   color: #0dcaf0;
 }
 
+.phone-number-456 {
+  cursor: pointer;
+  color: #2b2bf1;
+  text-decoration: underline;
+}
+
 .phone-number:hover {
   text-decoration: underline;
 }
