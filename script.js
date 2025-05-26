@@ -205,6 +205,6 @@ function sonnerie_tel(){
     setTimeout(() => {
       ringtone.pause();
       ringtone.currentTime = 0;
-    }, 5000);
+    }, 13500);//j'ai mis plus de 5 secondes car je trouve la musique vraiment pas mal.
   }
 }

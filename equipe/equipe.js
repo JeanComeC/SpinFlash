@@ -114,6 +114,7 @@ function ajouterMembre() {
       <p class="job">${poste}</p>
   `;
   imageRow.appendChild(newImageBlock);
+  grattage();
 
   // Ajouter la biographie dans bio-row
   const bioRow = document.querySelector(".bio-row");
