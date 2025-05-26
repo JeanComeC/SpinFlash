@@ -13,34 +13,34 @@ document.addEventListener("DOMContentLoaded", () => {
   //               loader
   //--------------------------------------
 
-  const loaderBackground = document.createElement("div");
-  loaderBackground.style.display = "flex";
-  loaderBackground.style.justifyContent = "center";
-  loaderBackground.style.alignItems = "center";
-  loaderBackground.id = "loaderBackground";
-  loaderBackground.style.height = "100vh";
-  loaderBackground.style.width = "100vw";
-  loaderBackground.style.backgroundColor = "white";
-  document.body.style.overflow = "hidden";
-  document.body.prepend(loaderBackground);
-  const loader = document.createElement("img");
-  if (document.location.href.includes("index.html")) {
-    loader.src = "img/1017000-200.png";
-  } else {
-    loader.src = "../img/1017000-200.png";
-  }
-  loader.style.position = "absolute";
-  loader.style.width = "100px";
-  loader.style.height = "100px";
-  loader.style.animation = "rotation 0.5s linear infinite";
+  // const loaderBackground = document.createElement("div");
+  // loaderBackground.style.display = "flex";
+  // loaderBackground.style.justifyContent = "center";
+  // loaderBackground.style.alignItems = "center";
+  // loaderBackground.id = "loaderBackground";
+  // loaderBackground.style.height = "100vh";
+  // loaderBackground.style.width = "100vw";
+  // loaderBackground.style.backgroundColor = "white";
+  // document.body.style.overflow = "hidden";
+  // document.body.prepend(loaderBackground);
+  // const loader = document.createElement("img");
+  // if (document.location.href.includes("index.html")) {
+  //   loader.src = "img/1017000-200.png";
+  // } else {
+  //   loader.src = "../img/1017000-200.png";
+  // }
+  // loader.style.position = "absolute";
+  // loader.style.width = "100px";
+  // loader.style.height = "100px";
+  // loader.style.animation = "rotation 0.5s linear infinite";
 
-  document.getElementById("loaderBackground").appendChild(loader);
+  // document.getElementById("loaderBackground").appendChild(loader);
 
-  setTimeout(() => {
-    document.body.style.overflow = "auto";
-    loaderBackground.style.display = "none";
-    document.body.removeChild(loaderBackground);
-  }, 2000);
+  // setTimeout(() => {
+  //   document.body.style.overflow = "auto";
+  //   loaderBackground.style.display = "none";
+  //   document.body.removeChild(loaderBackground);
+  // }, 2000);
 
   //--------------------------------------
   //   bouton + animation menu version telephone
@@ -165,7 +165,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let clipboardData = e.clipboardData || window.clipboardData;
 
     if (clipboardData) {
-      console.log("Copie détectée !");
+      console.log(
+        "Le plagiat consiste à s’approprier le travail ou les idées d’autrui sans les citer. Il est interdit dans les contextes scolaires, universitaires et professionnels. Toute source utilisée doit être clairement mentionnée, qu’il s’agisse d’un texte, d’une image ou d’une idée. Le respect de ces règles garantit l’intégrité intellectuelle de chacun. Le non-respect peut entraîner des sanctions allant de l’avertissement à l’exclusion."
+      );
     }
   });
 });
@@ -186,4 +188,23 @@ function updateClockAndTimer(horloge) {
     minute: "2-digit",
     second: "2-digit",
   });
+}
+
+function sonnerie_tel(){
+  console.log("c bon");
+  let fprompt = window.prompt(
+    "Si vous voulez appeler ce numéro : +33 (0)2 30 13 05 60, entrez le de nouveau dans le champ ci-dessous puis validez"
+  );
+  if(fprompt=="+33 (0)2 30 13 05 60" || fprompt=="0230130560" || fprompt=="+33 2 30 13 05 60"){
+    console.log("Vous appelez ce numéro : +33 (0)2 30 13 05 60");
+    // Joue la sonnerie
+    const ringtone = document.getElementById("ringtone");
+    ringtone.play();
+
+    // Arrête la sonnerie après 5 secondes
+    setTimeout(() => {
+      ringtone.pause();
+      ringtone.currentTime = 0;
+    }, 13500);//j'ai mis plus de 5 secondes car je trouve la musique vraiment pas mal.
+  }
 }

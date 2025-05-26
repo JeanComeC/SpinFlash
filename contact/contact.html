@@ -6,7 +6,7 @@
     <title>SPINFLASH - Contact</title>
     <link rel="stylesheet" href="../navbar.css" />
     <link rel="stylesheet" href="contact.css" />
-    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="icon" type="image/png" href="../img/icon.png" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0"
@@ -157,9 +157,14 @@
           <li><strong>Nom :</strong> SAS SpinFlash</li>
           <br />
           <li>
-            <strong>Téléphone :</strong>
-            <!-- Lien cliquable pour appeler directement depuis un appareil -->
-            <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+            Téléphone :
+            <span class="phone-number-456" onclick="sonnerie_tel()"
+              >+33 (0)2 30 13 05 60</span
+            >
+            <audio
+              id="ringtone"
+              src="../song/dance-monkey-iphone-remix.mp3"
+            ></audio>
           </li>
           <br />
           <li>
@@ -169,8 +174,8 @@
           </li>
           <br />
           <li>
-            <strong>Adresse :</strong> 331 Bd Marcel Paul, 44800 Saint-Herblain,
-            France
+            <strong>Adresse :</strong> Adresse : 33 Avenue du Champ de
+            Manœuvres, 44470 Carquefou, France
           </li>
         </ul>
       </div>
@@ -318,10 +323,20 @@
         <h3>Contact</h3>
         <ul>
           <li>
-            Adresse : 331 Bd Marcel Paul<br />44800 Saint-Herblain, France
+            Adresse : 33 Avenue du Champ de Manœuvres<br />44470 Carquefou,
+            France
           </li>
           <br />
-          <li>Téléphone : <a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+          <li>
+            Téléphone :
+            <span class="phone-number" onclick="sonnerie_tel()"
+              >+33 (0)2 30 13 05 60</span
+            >
+            <audio
+              id="ringtone"
+              src="../song/dance-monkey-iphone-remix.mp3"
+            ></audio>
+          </li>
           <br />
           <li>
             Mail :

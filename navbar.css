@@ -257,6 +257,21 @@ ul {
   margin: 0; /* Supprime les marges par défaut */
 }
 
+.phone-number {
+  cursor: pointer;
+  color: #0dcaf0;
+}
+
+.phone-number-456 {
+  cursor: pointer;
+  color: #2b2bf1;
+  text-decoration: underline;
+}
+
+.phone-number:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .footer {
     justify-content: center;
