@@ -30,6 +30,6 @@ function animation() {
     }
   }
 
-  type();
+  setTimeout(type, 2000); // Démarre l'animation après 2 secondes
   console.log(words); // Affiche le texte original dans la console
 }
