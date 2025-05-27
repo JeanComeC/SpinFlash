@@ -160,7 +160,7 @@
         <br />
       </div>
 
-      <form method="get" action="../index.html">
+      <form id="form_de_commande" method="get" action="../index.html">
         <!--J'ai mis method="get", comme expliqué précédemment-->
 
         <fieldset>
@@ -264,16 +264,17 @@
         <div class="button">
           <input
             class="button_annuler"
-            type="reset"
+            type="button"
             name="btn"
             value="Annuler"
+            onclick="annulerFormulaire()"
           />
           <input
             class="button_valider"
             type="button"
             name="btn"
             value="Valider la commande"
-            onclick="petitjeu()"
+            onclick="lancerJeu()"
           />
         </div>
       </form>
