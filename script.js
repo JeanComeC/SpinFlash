@@ -13,34 +13,34 @@ document.addEventListener("DOMContentLoaded", () => {
   //               loader
   //--------------------------------------
 
-  // const loaderBackground = document.createElement("div");
-  // loaderBackground.style.display = "flex";
-  // loaderBackground.style.justifyContent = "center";
-  // loaderBackground.style.alignItems = "center";
-  // loaderBackground.id = "loaderBackground";
-  // loaderBackground.style.height = "100vh";
-  // loaderBackground.style.width = "100vw";
-  // loaderBackground.style.backgroundColor = "white";
-  // document.body.style.overflow = "hidden";
-  // document.body.prepend(loaderBackground);
-  // const loader = document.createElement("img");
-  // if (document.location.href.includes("index.html")) {
-  //   loader.src = "img/1017000-200.png";
-  // } else {
-  //   loader.src = "../img/1017000-200.png";
-  // }
-  // loader.style.position = "absolute";
-  // loader.style.width = "100px";
-  // loader.style.height = "100px";
-  // loader.style.animation = "rotation 0.5s linear infinite";
+  const loaderBackground = document.createElement("div");
+  loaderBackground.style.display = "flex";
+  loaderBackground.style.justifyContent = "center";
+  loaderBackground.style.alignItems = "center";
+  loaderBackground.id = "loaderBackground";
+  loaderBackground.style.height = "100vh";
+  loaderBackground.style.width = "100vw";
+  loaderBackground.style.backgroundColor = "white";
+  document.body.style.overflow = "hidden";
+  document.body.prepend(loaderBackground);
+  const loader = document.createElement("img");
+  if (document.location.href.includes("index.html") || document.location.href.includes(null)) {
+    loader.src = "img/1017000-200.png";
+  } else {
+    loader.src = "../img/1017000-200.png";
+  }
+  loader.style.position = "absolute";
+  loader.style.width = "100px";
+  loader.style.height = "100px";
+  loader.style.animation = "rotation 0.5s linear infinite";
 
-  // document.getElementById("loaderBackground").appendChild(loader);
+  document.getElementById("loaderBackground").appendChild(loader);
 
-  // setTimeout(() => {
-  //   document.body.style.overflow = "auto";
-  //   loaderBackground.style.display = "none";
-  //   document.body.removeChild(loaderBackground);
-  // }, 2000);
+  setTimeout(() => {
+    document.body.style.overflow = "auto";
+    loaderBackground.style.display = "none";
+    document.body.removeChild(loaderBackground);
+  }, 2000);
 
   //--------------------------------------
   //   bouton + animation menu version telephone
