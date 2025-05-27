@@ -33,13 +33,15 @@ function petitjeu(){//function qui return un booléen en fonction de la victoire
   let reponse = window.prompt(
     `Essai n°${nbEssais} : (Tu n'a plus que ${6 - nbEssais} essais).`
   );
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 5; i++) {
     //je boucle que 4 fois car j'ai déjà fait 1 tour avant le for.
     if (reponse < nombreAleatoire) {
       window.alert(`Le nombre est plus grand.`);
+      if(i==4){break};//je rajoute une mini condition d'arrêt pour que le programme check une derniere fois si le nombre est bon.
     }
     if (reponse > nombreAleatoire) {
       window.alert(`Le nombre est plus petit.`);
+      if(i==4){break};//idem que ligne 40
     }
     if (reponse == nombreAleatoire) {
         window.alert("Bravo ! Vous avez gagné !");
