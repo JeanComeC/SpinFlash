@@ -1,4 +1,52 @@
+// ----------------------------------------------------
+//
+//                      FONCTIONS
+//
+// ----------------------------------------------------
+
+// Met à jour l'horloge affichée
+function updateClockAndTimer(horloge) {
+  // Horloge
+  let datetime = new Date();
+  horloge.innerHTML = datetime.toLocaleTimeString("fr-FR", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
+}
+
+// Fonction pour simuler un appel téléphonique avec sonnerie
+function sonnerie_tel() {
+  console.log("c bon");
+  let fprompt = window.prompt(
+    "Si vous voulez appeler ce numéro : +33 (0)2 30 13 05 60, entrez le de nouveau dans le champ ci-dessous puis validez"
+  );
+  if (
+    fprompt == "+33 (0)2 30 13 05 60" ||
+    fprompt == "0230130560" ||
+    fprompt == "+33 2 30 13 05 60"
+  ) {
+    console.log("Vous appelez ce numéro : +33 (0)2 30 13 05 60");
+    // Joue la sonnerie
+    const ringtone = document.getElementById("ringtone");
+    ringtone.play();
+
+    // Arrête la sonnerie après 5 secondes
+    setTimeout(() => {
+      ringtone.pause();
+      ringtone.currentTime = 0;
+    }, 13500); //j'ai mis plus de 5 secondes car je trouve la musique vraiment pas mal.
+  }
+}
+
+// ----------------------------------------------------
+//           Script principal du site SpinFlash
+// ----------------------------------------------------
+
 document.addEventListener("DOMContentLoaded", () => {
+  // -------------------------------
+  // Déclarations des éléments du DOM
+  // -------------------------------
   const menuButton = document.querySelector("#toggleButton");
   const liensTel = document.querySelector(".liensTel");
   const BtnProduitsTel = document.querySelector("#btn-produits-tel");
@@ -10,9 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const equipe = document.querySelectorAll("a.equipe");
 
   //--------------------------------------
-  //               loader
+  // Loader d'attente au chargement de la page
   //--------------------------------------
-
   const loaderBackground = document.createElement("div");
   loaderBackground.style.display = "flex";
   loaderBackground.style.justifyContent = "center";
@@ -24,7 +71,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.style.overflow = "hidden";
   document.body.prepend(loaderBackground);
   const loader = document.createElement("img");
-  if (document.location.href.includes("index.html") || document.location.href.includes(null)) {
+  if (
+    document.location.href.includes("index.html") ||
+    document.location.href.includes(null)
+  ) {
     loader.src = "img/1017000-200.png";
   } else {
     loader.src = "../img/1017000-200.png";
@@ -43,9 +93,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 2000);
 
   //--------------------------------------
-  //   bouton + animation menu version telephone
+  // Gestion du menu version téléphone (ouverture/fermeture)
   //--------------------------------------
-
   menuButton.addEventListener("click", () => {
     if (liensTel.classList.contains("menu-actif")) {
       liensTel.style.height = "0";
@@ -64,9 +113,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   //--------------------------------------
-  // bouton + animation Produits Tel
+  // Animation du sous-menu "Produits" sur mobile
   //--------------------------------------
-
   BtnProduitsTel.addEventListener("click", () => {
     if (ListeProduitsTel.classList.contains("produits-actif")) {
       ListeProduitsTel.style.height = "0";
@@ -86,9 +134,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   //--------------------------------------
-  // bouton + animation Produits Ordi
+  // Animation du sous-menu "Produits" sur ordinateur
   //--------------------------------------
-
   BtnProduitsOrdi.addEventListener("click", () => {
     if (ListeProduitsOrdi.classList.contains("produits-actif")) {
       ListeProduitsOrdi.style.height = "0";
@@ -103,6 +150,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  //--------------------------------------
+  // Confirmation avant de quitter la page via les liens "equipe"
+  //--------------------------------------
   equipe.forEach((e) => {
     e.addEventListener("click", (e) => {
       if (window.confirm("Êtes-vous sûr de vouloir quitter cette page ?")) {
@@ -114,9 +164,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   //--------------------------------------
-  // Horloge Et Chronometre
+  // Horloge en temps réel et chronomètre
   //--------------------------------------
-
   const horloge = document.getElementById("heure");
   const heure = document.getElementById("chrono-heures");
   const minute = document.getElementById("chrono-minutes");
@@ -158,9 +207,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 1000);
 
   //--------------------------------------
-  //        Copier / Plagiat
+  // Message d'avertissement lors d'une tentative de copie (plagiat)
   //--------------------------------------
-
   document.addEventListener("copy", (e) => {
     let clipboardData = e.clipboardData || window.clipboardData;
 
@@ -171,40 +219,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-// ----------------------------------------------------
-//
-//                      FONCTIONS
-//
-// ----------------------------------------------------
-
-function updateClockAndTimer(horloge) {
-  // Horloge
-
-  let datetime = new Date();
-
-  horloge.innerHTML = datetime.toLocaleTimeString("fr-FR", {
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-  });
-}
-
-function sonnerie_tel(){
-  console.log("c bon");
-  let fprompt = window.prompt(
-    "Si vous voulez appeler ce numéro : +33 (0)2 30 13 05 60, entrez le de nouveau dans le champ ci-dessous puis validez"
-  );
-  if(fprompt=="+33 (0)2 30 13 05 60" || fprompt=="0230130560" || fprompt=="+33 2 30 13 05 60"){
-    console.log("Vous appelez ce numéro : +33 (0)2 30 13 05 60");
-    // Joue la sonnerie
-    const ringtone = document.getElementById("ringtone");
-    ringtone.play();
-
-    // Arrête la sonnerie après 5 secondes
-    setTimeout(() => {
-      ringtone.pause();
-      ringtone.currentTime = 0;
-    }, 13500);//j'ai mis plus de 5 secondes car je trouve la musique vraiment pas mal.
-  }
-}
